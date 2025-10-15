@@ -1,7 +1,9 @@
+/* changement de la couleur du fond sur toutes les pages*/
 body {
     background-color: black;
 }
 
+/*le conteneur des cartes, il gère la disposition en ligne et leur défilement horizontal*/
 .card-container {
     display: flex;
     justify-content: flex-start;
@@ -13,6 +15,7 @@ body {
     scroll-padding: 20px;
 }
 
+/*taille des images des affiches des films dans le index.html*/
 img {
     width: 70%;
     height: 90%;
@@ -22,6 +25,7 @@ img {
 
 }
 
+/*couleur et taille des cartes ainsi que du texte*/
 .card {
     background-color:  white;
     flex: 0 0 auto;
@@ -34,6 +38,7 @@ img {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
+/*la mise en page des détails des films dans le view.html*/
 #card-details {
     display: flex;
     flex-direction: column;
