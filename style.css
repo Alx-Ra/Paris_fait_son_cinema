@@ -23,13 +23,13 @@ img {
 }
 
 .card {
+    background-color:  white;
     flex: 0 0 auto;
     width: 400px;
     height: 380px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 12px;
-    background-color: white;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
