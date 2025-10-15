@@ -1,0 +1,43 @@
+body {
+    background-color: black;
+}
+
+.card-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    overflow-x: auto;
+    padding: 20px;
+    flex-wrap: nowrap;
+    scroll-behavior: smooth;
+    scroll-padding: 20px;
+}
+
+img {
+    width: 70%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+
+}
+
+.card {
+    flex: 0 0 auto;
+    width: 400px;
+    height: 380px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#card-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
