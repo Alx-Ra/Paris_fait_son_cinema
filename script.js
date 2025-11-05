@@ -14,6 +14,7 @@ const cartes = [
         ],
         zoom: 16,
     },
+
      {
         id: "2",
         titre: "Les Trois mousquetaires : D'artagnan",
@@ -22,6 +23,17 @@ const cartes = [
         pins: [
             {coords: [48.8425, 2.3393], label: "lieu 1"},
             {coords: [48.82623, 2.36085], label: "lieu 2"},
+        ],
+        zoom: 16,
+    },
+
+    {
+        id: "3",
+        titre: "Emily in Paris",
+        image: "images/Emily_in_Paris.jpg",
+        texte: "Emily Jane Cooper, une Américaine de Chicago, déménage à Paris, en France, suite à une promotion dans sa «boîte». En effet, la société de marketing où elle travaille vient d'acquérir Savoir, une société du même domaine basée en France, à laquelle l'agence d'Emily souhaite apporter une touche américaine.",
+        pins: [
+            {coords: [48.82623, 2.36085], label: "lieu"},
         ],
         zoom: 16,
     },
