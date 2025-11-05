@@ -30,33 +30,45 @@ const cartes = [
 //  pour vérifier que c'est bien le même que l'id de l'URL.
 const carte = cartes.find(c => c.id === id);
 
-//Récupération de l'élément avec l'id card-details dans le fichier view.html.
+//Garder dans const container l'élèment avec  l'id card-details
+// qui se trouve dans le fichier view.html.
 const container = document.getElementById("card-details");
 
 //Injecter dynamiquement les éléments de la carte dans le view.html.
-if (carte) {
+if (carte) { // Verifie si l'objet carte existe.
+    // Insère dynamiquement le contenu HTML dans le container.
     container.innerHTML = `
     <h2>${carte.titre}</h2>
     <img src="${carte.image}" alt="${carte.titre}" style="width:400px;">
     <p>${carte.texte}</p>
     <div id="map" style="width:400px;height:300px;margin-top:20px;border-radius:10px;"></div>
     `;
-    const map = L.map("map"); 
-    const latlngs = carte.pins.map(pin => pin.coords);
-    map.fitBounds(latlngs, {padding: [50, 50]});
 
-L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    maxZoom: 19,
-    attribution: '© OpenStreetMap'
+    //Initialise une map Leaflet.
+    const map = L.map("map"); 
+    //Récupère les coordonnées des pins pour chaque carte.
+    const latlngs = carte.pins.map(pin => pin.coords);
+    //Englobe et zoom sur les pins pour qu'ils soient tous visible.
+    //avec de l'espace entre les pins et les côtés de la map.
+    map.fitBounds(latlngs, {padding: [50, 50]});
+    
+    //Ajout du fond de map openstreetmap.
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 19, //Zoom maximum autorisé.
+    attribution: '© OpenStreetMap' //ajout de l'attribution de la map (mention légale).
   }).addTo(map);
 
+  //Supprime le prefix "Leaflet".
   map.attributionControl.setPrefix(false);
-
-carte.pins.forEach(pin => {
+  
+  //Parcours chaque pin de la carte.
+  carte.pins.forEach(pin => {
+    //Crée un marqueur à ses coordonnées, l'ajoute à la map,
+    //associe au marqueur une popup avec son label.
     L.marker(pin.coords).addTo(map).bindPopup(`${pin.label}`);
 });
 
-} else {
-    container.innerHTML = "<p>Carte non trouvée.</p>";
+} else { //Si l'objet carte n'est pas trouvé.
+    //Le texte s'affiche.
     container.innerHTML = "<p>Carte non trouvée.</p>";
 }
