@@ -22,7 +22,6 @@ img {
   display: block;
   margin: 0 auto;
   border-radius: 8px;
-
 }
 
 /*couleur et taille des cartes ainsi que du texte*/
@@ -31,9 +30,6 @@ img {
     width: 200px;
     height: 250px;
     padding: 20px;
-   
-  
-
 }
 
 /*la mise en page des détails des films dans le view.html*/
@@ -45,6 +41,7 @@ img {
     color: white;
 
 }
+
 
 
 
