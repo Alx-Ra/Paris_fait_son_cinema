@@ -31,10 +31,9 @@ img {
     width: 200px;
     height: 250px;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+   
+  
+
 }
 
 /*la mise en page des détails des films dans le view.html*/
@@ -46,5 +45,6 @@ img {
     color: white;
 
 }
+
 
 
