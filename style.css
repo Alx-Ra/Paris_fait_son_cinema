@@ -1,6 +1,7 @@
 /* changement de la couleur du fond sur toutes les pages*/
 body {
     background-color: black;
+    margin: 0;
 }
 
 /*le conteneur des cartes, il gère la disposition en ligne et leur défilement horizontal*/
@@ -42,8 +43,9 @@ img {
 
 }
 
-
-
-
-
-
+/*mise en page de la navbar*/
+.navbar {
+    overflow: hidden;
+    background-color: rgb(90, 90, 90);
+    padding: 0.5em 1em;
+}
