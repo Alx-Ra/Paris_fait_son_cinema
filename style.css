@@ -27,7 +27,6 @@ img {
 
 /*couleur et taille des cartes ainsi que du texte*/
 .card {
-    background-color:  white;
     flex: 0 0 auto;
     width: 200px;
     height: 250px;
@@ -47,4 +46,5 @@ img {
     color: white;
 
 }
+
 
