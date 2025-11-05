@@ -17,7 +17,7 @@ const cartes = [
      {
         id: "2",
         titre: "Les Trois mousquetaires : D'artagnan",
-        image: "https://img.bertrand.pt/images/os-tres-mosqueteiros-dartagnan-alexandre-dumas/NDV8MjkzNTk3NTR8MjU3NTc3NTV8MTY5NTgwNTEyMDAwMA==/500x",
+        image: "images/Les_trois_mousquetaires_d'Artagnan.jpg",
         texte: "Les Trois Mousquetaires raconte l'histoire de D'Artagnan, un jeune Gascon de 18 ans qui se rend à Paris pour devenir mousquetaire. Il se lie d'amitié avec Athos, Porthos et Aramis, les célèbres mousquetaires du roi Louis XIII, et ensemble, ils se battent pour défendre l'honneur et la justice dans un royaume divisé par les guerres de religion et menacé par l'Angleterre. Dans cette aventure, ils affrontent des complots politiques et des duels, tout en cherchant à protéger la reine.",
         pins: [
             {coords: [48.8425, 2.3393], label: "lieu 1"},
