@@ -9,6 +9,12 @@ const cartes = [
         titre: "Sous la Seine",
         image: "images/Sous_la_Seine.jpg",
         texte: "Été 2024, Paris accueille pour la première fois les championnats du monde de triathlon sur la Seine. Sophia, brillante scientifique, est alertée par Mika, une jeune activiste dévouée à l'écologie, de la présence d'un grand requin dans les profondeurs du fleuve. Elles n'ont d'autre choix que de faire équipe avec Adil, commandant de la police fluviale pour éviter un bain de sang au cœur de la ville.",
+        realisateur: "Xavier Gens",
+        acteurs: [
+            {acteur: "Bérénice Bejo"},
+            {acteur: "Nassim Lyes"},
+            {acteur: "Léa Léviant"},
+        ],
         pins: [
             {coords: [48.82623, 2.36085], label: "lieu"},
         ],
@@ -20,6 +26,14 @@ const cartes = [
         titre: "Les Trois mousquetaires : D'artagnan",
         image: "images/Les_trois_mousquetaires_d'Artagnan.jpg",
         texte: "Les Trois Mousquetaires raconte l'histoire de D'Artagnan, un jeune Gascon de 18 ans qui se rend à Paris pour devenir mousquetaire. Il se lie d'amitié avec Athos, Porthos et Aramis, les célèbres mousquetaires du roi Louis XIII, et ensemble, ils se battent pour défendre l'honneur et la justice dans un royaume divisé par les guerres de religion et menacé par l'Angleterre. Dans cette aventure, ils affrontent des complots politiques et des duels, tout en cherchant à protéger la reine.",
+        realisateur: "Martin Bourboulon",
+        acteurs: [
+            {acteur: "François Civil"},
+            {acteur: "Vincent Cassel"},
+            {acteur: "Romain Duris"},
+            {acteur: "Pio Marmaï"},
+            {acteur: "Eva Green"},
+        ],
         pins: [
             {coords: [48.8425, 2.3393], label: "lieu 1"},
             {coords: [48.82623, 2.36085], label: "lieu 2"},
@@ -32,6 +46,13 @@ const cartes = [
         titre: "Emily in Paris",
         image: "images/Emily_in_Paris.jpg",
         texte: "Emily Jane Cooper, une Américaine de Chicago, déménage à Paris, en France, suite à une promotion dans sa «boîte». En effet, la société de marketing où elle travaille vient d'acquérir Savoir, une société du même domaine basée en France, à laquelle l'agence d'Emily souhaite apporter une touche américaine.",
+        realisateur: "Darren Star",
+        acteurs: [
+            {acteur: "Lily Collins"},
+            {acteur: "Philippine Leroy-Beaulieu"},
+            {acteur: "Ashley Park"},
+            {acteur: "Lucas Bravo"},
+        ],
         pins: [
             {coords: [48.82623, 2.36085], label: "lieu"},
         ],
@@ -48,11 +69,19 @@ const container = document.getElementById("card-details");
 
 //Injecter dynamiquement les éléments de la carte dans le view.html.
 if (carte) { // Verifie si l'objet carte existe.
+
+    const acteurs = carte.acteurs
+    ? carte.acteurs.map(i => `<li>${i.acteur}</li>`).join("")
+    : "Aucun acteurs renseignés";
     // Insère dynamiquement le contenu HTML dans le container.
     container.innerHTML = `
     <h2>${carte.titre}</h2>
     <img src="${carte.image}" alt="${carte.titre}" style="width:400px;">
     <p>${carte.texte}</p>
+    <h3>Réalisateur : </h3>
+    <p>${carte.realisateur}</p>
+    <h3>Acteurs : </h3>
+    <ul>${acteurs}</ul>
     <div id="map" style="width:400px;height:300px;margin-top:20px;border-radius:10px;"></div>
     `;
 
