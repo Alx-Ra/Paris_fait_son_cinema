@@ -33,6 +33,10 @@ img {
     padding: 20px;
 }
 
+.card :hover {
+    transform: scale(1.2);
+}
+
 /*mise en page de la navbar*/
 .navbar {
     overflow: hidden;

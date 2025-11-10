@@ -67,7 +67,7 @@ const carte = cartes.find(c => c.id === id);
 // qui se trouve dans le fichier view.html.
 const container = document.getElementById("card-details");
 
-//Injecter dynamiquement les éléments de la carte dans le view.html.
+//Injecter dynamiquement² les éléments de la carte dans le view.html.
 if (carte) { // Verifie si l'objet carte existe.
 
     const acteurs = carte.acteurs
