@@ -76,12 +76,20 @@ if (carte) { // Verifie si l'objet carte existe.
     // Insère dynamiquement le contenu HTML dans le container.
     container.innerHTML = `
     <h2>${carte.titre}</h2>
+    <div class="img-infos">
     <img src="${carte.image}" alt="${carte.titre}" style="width:400px;">
-    <p>${carte.texte}</p>
+    <div class="infos-droite>
+    <p id="resume">${carte.texte}</p>
+    <div id="real">
     <h3>Réalisateur : </h3>
     <p>${carte.realisateur}</p>
+    </div>
+    <div id="act">
     <h3>Acteurs : </h3>
     <ul>${acteurs}</ul>
+    </div>
+    </div>
+    </div>
     <div id="map" style="width:400px;height:300px;margin-top:20px;border-radius:10px;"></div>
     `;
 

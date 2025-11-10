@@ -1,0 +1,65 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+
+/*la mise en page des détails des films dans le view.html*/
+#card-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+/*mise en page de la navbar*/
+.navbar {
+    overflow: hidden;
+    background-color: rgb(90, 90, 90);
+    padding: 0.5em 1em;
+}
+
+.img-infos {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+  max-width: 1000px;
+  margin-bottom: 20px;
+}
+
+.img-infos img {
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.infos-droite {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#resume {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+#real, #act {
+  margin-top: 10px;
+}
+
+#act ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#act li {
+  margin-left: 10px;
+}
+
+#map {
+    margin-bottom: 15px;
+}

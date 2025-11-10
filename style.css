@@ -33,16 +33,6 @@ img {
     padding: 20px;
 }
 
-/*la mise en page des détails des films dans le view.html*/
-#card-details {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-
-}
-
 /*mise en page de la navbar*/
 .navbar {
     overflow: hidden;
