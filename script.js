@@ -73,6 +73,10 @@ if (carte) { // Verifie si l'objet carte existe.
     const acteurs = carte.acteurs
     ? carte.acteurs.map(i => `<li>${i.acteur}</li>`).join("")
     : "Aucun acteurs renseignés";
+
+    const labels = carte.pins
+    ? carte.pins.map(j => `<li>${j.label}</li>`).join("")
+    : "Aucun lieux renseignés";
     // Insère dynamiquement le contenu HTML dans le container.
     container.innerHTML = `
     <h2>${carte.titre}</h2>
@@ -90,7 +94,13 @@ if (carte) { // Verifie si l'objet carte existe.
     </div>
     </div>
     </div>
+    <div class="map-lieu">
+    <div id="labels">
+    <h3>Lieux de tournage : </h3>
+    <ul>${labels}</ul>
+    </div>
     <div id="map" style="width:400px;height:300px;margin-top:20px;border-radius:10px;"></div>
+    </div>
     `;
 
     //Initialise une map Leaflet.
