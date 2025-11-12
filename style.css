@@ -7,6 +7,10 @@ body {
     overflow-x: hidden;
 }
 
+h2 {
+    color: #D1A54D;
+    margin-left: 20px;
+}
 
 /*mise en page de la navbar*/
 .navbar {
