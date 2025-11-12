@@ -48,6 +48,20 @@ body {
 
 }
 
+.map-lieu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 60px;
+}
+
+#labels {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 
 .img-infos {
   display: flex;
