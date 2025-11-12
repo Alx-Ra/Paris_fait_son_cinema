@@ -107,41 +107,5 @@ body {
     margin-bottom: 15px;
 }
 
-/* --- Amélioration visuelle du bloc résumé / fiche film --- */
 
-.infos-droite {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 20px 25px;
-  border-radius: 10px;
-  backdrop-filter: blur(6px);
-  box-shadow: 0 0 15px rgba(255,255,255,0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.infos-droite:hover {
-  transform: scale(1.01);
-  box-shadow: 0 0 25px rgba(255,255,255,0.1);
-}
-
-#resume {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #ddd;
-  text-align: justify;
-}
-
-#real, #act {
-  font-weight: bold;
-  color: #D1A54D;
-}
-
-#act ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-#act li {
-  margin-left: 10px;
-}
 
