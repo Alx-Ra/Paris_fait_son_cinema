@@ -7,12 +7,26 @@ body {
     overflow-x: hidden;
 }
 
-.navbar{
+
+/*mise en page de la navbar*/
+.navbar {
+    background-color: #0d0d0d;
+    padding: 20px 10px; 
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-end;
+    align-items: center;
     padding-left: 20px;
     padding-top: 10px;
+}
+
+.navbar h1 {
+    color: #D1A54D;
+    margin: 0;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(241,196,15,0.4);
 }
 
 #logo {
@@ -57,45 +71,4 @@ body {
     box-shadow: 0 0 15px rgba(300,200,20,0.3);
 }
 
-/*mise en page de la navbar*/
-.navbar {
-    background-color: #0d0d0d;
-    padding: 20px 10px; 
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-    position: sticky;
-    top: 0;
-}
-
-.navbar h1 {
-    color: #D1A54D;
-    margin: 0;
-    text-transform: uppercase;
-    text-shadow: 0 0 10px rgba(241,196,15,0.4);
-}
-
-<<<<<<< HEAD
-=======
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> d7191dc0bc07c08091592b0e97cb1ea0ff05918c
 

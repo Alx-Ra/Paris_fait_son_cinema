@@ -6,6 +6,38 @@ body {
     overflow-x: hidden;
 }
 
+/*mise en page de la navbar*/
+.navbar {
+    background-color: #0d0d0d;
+    padding: 20px 10px; 
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.navbar h1 {
+    color: #D1A54D;
+    margin: 0;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(241,196,15,0.4);
+}
+
+.navbar a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+#logo {
+    width: 70px;
+    margin-right: 10px;
+}
+
 /*la mise en page des détails des films dans le view.html*/
 #card-details {
     display: flex;
@@ -16,21 +48,6 @@ body {
 
 }
 
-/*mise en page de la navbar*/
-.navbar {
-    background-color: #0d0d0d;
-    padding: 20px 10px; 
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-    position: sticky;
-    top: 0;
-}
-
-.navbar h1 {
-    color: #f1c40f;
-    margin: 0;
-    text-transform: uppercase;
-    text-shadow: 0 0 10px rgba(241,196,15,0.4);
-}
 
 .img-infos {
   display: flex;
