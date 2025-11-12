@@ -34,7 +34,7 @@ img {
     width: 200px;
     height: 250px;
     padding: 20px;
-    border-radius: 10px
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0,5); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -59,6 +59,7 @@ img {
     text-transform: uppercase;
     text-shadow: 0 0 10px rgba(241,196,15,0.4);
 }
+
 
 
 
