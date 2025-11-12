@@ -7,6 +7,19 @@ body {
     overflow-x: hidden;
 }
 
+.navbar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+#logo {
+    width: 70px;
+    margin-right: 10px;
+}
+
 /*le conteneur des cartes, il gère la disposition en ligne et leur défilement horizontal*/
 .card-container {
     display: flex;
@@ -20,7 +33,7 @@ body {
 }
 
 /*taille des images des affiches des films dans le index.html*/
-img {
+.card img {
     width: 70%;
     height: 90%;
   display: block;
@@ -34,7 +47,7 @@ img {
     width: 200px;
     height: 250px;
     padding: 20px;
-    border-radius: 10px
+    border-radius: 10px;;
     box-shadow: 0 0 10px rgba(0,0,0,0,5); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -59,25 +72,4 @@ img {
     text-transform: uppercase;
     text-shadow: 0 0 10px rgba(241,196,15,0.4);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
