@@ -38,6 +38,7 @@ img {
 
 .card :hover {
     transform: scale(1.2);
+    box-shadow: 0 0 15px rgba(241,196,15,0.3);
 }
 
 /*mise en page de la navbar*/
@@ -47,4 +48,5 @@ img {
     padding: 0.5em 1em;
 
 }
+
 
