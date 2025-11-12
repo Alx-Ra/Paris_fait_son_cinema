@@ -1,6 +1,6 @@
 /* changement de la couleur du fond sur toutes les pages*/
 body {
-    background-color: black;
+    background-color: #0d0d0d;
     margin: 0;
 }
 
@@ -37,7 +37,7 @@ img {
 }
 
 .card :hover {
-    transform: scale(1.2);
+    transform: scale(1.05);
     box-shadow: 0 0 15px rgba(300,200,20,0.3);
 }
 
@@ -48,6 +48,7 @@ img {
     padding: 0.5em 1em;
 
 }
+
 
 
 
