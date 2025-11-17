@@ -60,6 +60,51 @@ const cartes = [
         ],
         zoom: 16,
     },
+
+    {
+        id: "4",
+        titre: "Le fabuleux destin d'Amélie Poulain",
+        image: "images/Amelie_Poulain.jpg",
+        texte: "Amélie, une jeune serveuse dans un bar de Montmartre, passe son temps à observer les gens et à laisser son imagination divaguer. Elle s'est fixé un but : faire le bien de ceux qui l'entourent. Elle invente alors des stratagèmes pour intervenir incognito dans leur existence. Le chemin d'Amélie est jalonné de rencontres : Georgette, la buraliste hypocondriaque ; Lucien, le commis d'épicerie ; Madeleine Wallace, la concierge portée sur le porto et les chiens empaillés ; Raymond Dufayel, son voisin.",
+        realisateur: "Jean-Pierre Jeunet",
+        acteurs: [
+            {acteur: "Audrey Tautou"},
+            {acteur: "Mathieu Kassovitz"},
+            {acteur: "Rufus"},
+            {acteur: "Serge Merlin"},
+            {acteur: "Jamel Debbouze"},
+        ],
+        pins: [
+            {coords: [48.8925, 2.3444], label: "Butte Montmartre"},
+            {coords: [48.884979, 2.333568], label: "Café des deux Moulins"},
+            {coords: [48.882324, 2.381923], label: "Marché de la Butte"},
+            {coords: [48.88500, 2.34333], label: "Square Louise-Michel"},
+            {coords: [48.8716, 2.3580], label: "Canal Saint-Martin"},
+        ],
+        zoom: 16,
+    },
+
+    {
+        id: "5",
+        titre: "Paris, je t'aime",
+        image: "images/Paris_je_taime.jpg",
+        texte: "Dix-huit histoires sur le thème de l'amour se déroulant dans des arrondissements parisiens: un célibataire vient en aide à une femme qui s'est évanouie sur la rue; un touriste américain regrette d'avoir fait de l'oeil à une fille dans le métro; une immigrée brésilienne dépose son bébé à la crèche afin d'aller s'occuper de celui d'une famille bourgeoise.",
+        realisateur: "Olivier Assayas",
+        acteurs: [
+            {acteur: "Juliette Binoche"},
+            {acteur: "Wes Craven"},
+            {acteur: "Gaspard Ulliel"},
+            {acteur: "Elijah Wood"},
+            {acteur: "Steve Buscemi"},
+        ],
+        pins: [
+            {coords: [48.8655359, 2.3412944], label: "Place des Victoires"},
+            {coords: [48.8603823, 2.360742], label: "Le Marais"},
+            {coords: [48.8508, 2.3392], label: "Quartier Latin"},
+            {coords: [48.8822982, 2.3380899], label: "Pigalle"},
+            {coords: [48.8611296, 2.3940087], label: "Cimetière du Père Lachaise"},
+        ],
+    },
 ];
 //Parcours le tableau de cartes pour trouver l'id de la carte
 //  pour vérifier que c'est bien le même que l'id de l'URL.
