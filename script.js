@@ -133,7 +133,7 @@ if (carte) { // Verifie si l'objet carte existe.
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1 class="hero-title">${carte.titre}</h1>
-            <p class=hero-subtitle">${carte.herosubtitle}</p>
+            <p class="hero-subtitle">${carte.herosubtitle}</p>
         </div>
     </section>
 
@@ -141,7 +141,7 @@ if (carte) { // Verifie si l'objet carte existe.
     <h2>${carte.titre}</h2>
     <div class="img-infos">
     <img src="${carte.image}" alt="${carte.titre}" style="width:400px;">
-    <div class="infos-droite>
+    <div class="infos-droite">
     <p id="resume">${carte.texte}</p>
     <div id="real">
     <h3>Réalisateur : </h3>
@@ -190,6 +190,7 @@ if (carte) { // Verifie si l'objet carte existe.
     //Le texte s'affiche.
     container.innerHTML = "<p>Carte non trouvée.</p>";
 }
+
 
 
 
