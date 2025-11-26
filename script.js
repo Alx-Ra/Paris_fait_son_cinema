@@ -126,7 +126,18 @@ if (carte) { // Verifie si l'objet carte existe.
     ? carte.pins.map(j => `<li>${j.label}</li>`).join("")
     : "Aucun lieux renseignés";
     // Insère dynamiquement le contenu HTML dans le container.
+    // + J'insère la section hero.
     container.innerHTML = `
+
+    <section class="hero" style="background-image: url('${carte.image}');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">${carte.titre}</h1>
+            <p class=hero-subtitle">${carte.heroSubtitle}</p>
+        </div>
+    </section>
+
+    <div class="page-content">
     <h2>${carte.titre}</h2>
     <div class="img-infos">
     <img src="${carte.image}" alt="${carte.titre}" style="width:400px;">
@@ -179,4 +190,5 @@ if (carte) { // Verifie si l'objet carte existe.
     //Le texte s'affiche.
     container.innerHTML = "<p>Carte non trouvée.</p>";
 }
+
 
