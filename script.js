@@ -8,6 +8,8 @@ const cartes = [
         id: "1",
         titre: "Sous la Seine",
         image: "images/Sous_la_Seine.jpg",
+        heroImage: "https://i.headtopics.com/images/2024/8/28/bfmtv/sous-la-seine-depasse-les-100-millions-de-vues-et--sous-la-seine-depasse-les-100-millions-de-vues-et--B84BEB6CFCA0BE5055D59178A0BC2B5C.webp",
+        herosubtitle: "En plein été, Paris est menacé par un mystérieux danger venu des profondeurs.Entre suspense et action, une course contre la montre s'engage pour sauver la ville.",
         texte: "Été 2024, Paris accueille pour la première fois les championnats du monde de triathlon sur la Seine. Sophia, brillante scientifique, est alertée par Mika, une jeune activiste dévouée à l'écologie, de la présence d'un grand requin dans les profondeurs du fleuve. Elles n'ont d'autre choix que de faire équipe avec Adil, commandant de la police fluviale pour éviter un bain de sang au cœur de la ville.",
         realisateur: "Xavier Gens",
         acteurs: [
@@ -179,11 +181,22 @@ if (carte) { // Verifie si l'objet carte existe.
     ? carte.pins.map(j => `<li>${j.label}</li>`).join("")
     : "Aucun lieux renseignés";
     // Insère dynamiquement le contenu HTML dans le container.
+    // + J'insère la section hero.
     container.innerHTML = `
+
+    <section class="hero" style="background-image: url('${carte.heroImage || carte.image}');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">${carte.titre}</h1>
+            <p class="hero-subtitle">${carte.herosubtitle}</p>
+        </div>
+    </section>
+
+    <div class="page-content">
     <h2>${carte.titre}</h2>
     <div class="img-infos">
     <img src="${carte.image}" alt="${carte.titre}" style="width:400px;">
-    <div class="infos-droite>
+    <div class="infos-droite">
     <p id="resume">${carte.texte}</p>
     <div id="real">
     <h3>Réalisateur : </h3>
@@ -232,3 +245,9 @@ if (carte) { // Verifie si l'objet carte existe.
     //Le texte s'affiche.
     container.innerHTML = "<p>Carte non trouvée.</p>";
 }
+
+
+
+
+
+
