@@ -73,9 +73,9 @@ h2 {
 .card :hover {
     transform: scale(1.05);
     box-shadow: 0 0 15px rgba(300,200,20,0.3);
-    cursor: url("images/cursor.jpg") 16 16, pointer;
-    /* cursor: url("https://github.com/Alx-Ra/Paris_fait_son_cinema/blob/master/images/cursor.jpg") 16 16, pointer;*/
+    cursor: url("https://github.com/Alx-Ra/Paris_fait_son_cinema/blob/master/images/curseur.png") 16 16, pointer;
 }
+
 
 
 
