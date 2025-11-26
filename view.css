@@ -111,7 +111,7 @@ body {
 .hero {
     margin: 0;
     position: relative;
-    height: 70vh;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -177,6 +177,7 @@ body {
         height: 60vh;
     }
 }
+
 
 
 
