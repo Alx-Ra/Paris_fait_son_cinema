@@ -60,7 +60,7 @@ h2 {
 }
 
 .card img:hover {
-    cursor: url("..images/cursor.jpg") 16 16, pointer;
+    cursor: url("../images/cursor.jpg") 16 16, pointer;
 }
 
 /*couleur et taille des cartes ainsi que du texte*/
@@ -78,6 +78,7 @@ h2 {
     transform: scale(1.05);
     box-shadow: 0 0 15px rgba(300,200,20,0.3);
 }
+
 
 
 
