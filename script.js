@@ -8,6 +8,7 @@ const cartes = [
         id: "1",
         titre: "Sous la Seine",
         image: "images/Sous_la_Seine.jpg",
+        heroImage: "images/hero_sous_la_seine.jpg",
         herosubtitle: "En plein été, Paris est menacé par un mystérieux danger venu des profondeurs.Entre suspense et action, une course contre la montre s'engage pour sauver la ville.",
         texte: "Été 2024, Paris accueille pour la première fois les championnats du monde de triathlon sur la Seine. Sophia, brillante scientifique, est alertée par Mika, une jeune activiste dévouée à l'écologie, de la présence d'un grand requin dans les profondeurs du fleuve. Elles n'ont d'autre choix que de faire équipe avec Adil, commandant de la police fluviale pour éviter un bain de sang au cœur de la ville.",
         realisateur: "Xavier Gens",
@@ -129,7 +130,7 @@ if (carte) { // Verifie si l'objet carte existe.
     // + J'insère la section hero.
     container.innerHTML = `
 
-    <section class="hero" style="background-image: url('${carte.image}');">
+    <section class="hero" style="background-image: url('${carte.heroImage || carte.image}');">
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1 class="hero-title">${carte.titre}</h1>
@@ -190,6 +191,7 @@ if (carte) { // Verifie si l'objet carte existe.
     //Le texte s'affiche.
     container.innerHTML = "<p>Carte non trouvée.</p>";
 }
+
 
 
 
