@@ -115,6 +115,7 @@ body {
 
 /* Hero Section */
 .hero {
+    width: 100vw;
     margin: 0;
     position: relative;
     height: 100vh;
@@ -183,6 +184,7 @@ body {
         height: 60vh;
     }
 }
+
 
 
 
