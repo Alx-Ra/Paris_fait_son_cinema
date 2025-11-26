@@ -16,7 +16,9 @@ const cartes = [
             {acteur: "Léa Léviant"},
         ],
         pins: [
-            {coords: [48.82623, 2.36085], label: "lieu"},
+            {coords: [48.8853207, 2.3721572], label: "Quai de Seine"},
+            {coords: [48.833981, 2.332506], label: "Catacombe de Paris"},
+            {coords: [48.8570226, 2.352859], label: "Hôtel de ville"},
         ],
         zoom: 16,
     },
@@ -56,7 +58,11 @@ const cartes = [
             {acteur: "Lucas Bravo"},
         ],
         pins: [
-            {coords: [48.82623, 2.36085], label: "lieu"},
+            {coords: [48.845263, 2.3448184], label: "Place de l'Estrapade"},
+            {coords: [48.8631233, 2.3382205], label: "Place de Valois"},
+            {coords: [48.8632276, 2.3360987], label: "Le Palais-Royal"},
+            {coords: [48.8628402, 2.287142], label: "Café de l'Homme"},
+            {coords: [48.8634697, 2.3135181], label: "Pont Alexandre III"},
         ],
         zoom: 16,
     },
@@ -104,6 +110,54 @@ const cartes = [
             {coords: [48.8822982, 2.3380899], label: "Pigalle"},
             {coords: [48.8611296, 2.3940087], label: "Cimetière du Père Lachaise"},
         ],
+        zoom: 16,
+    },
+
+    {
+        id: "6",
+        titre: "Mission Impossible : Fallout",
+        image: "images/mission_impossible.jpg",
+        texte: "Ethan Hunt et l'équipe du FMI se joignent à August Walker, l'assassin de la CIA, pour éviter une catastrophe d'une ampleur extrême. Le marchand d'armes John Lark et un groupe de terroristes connus prévoient utiliser trois noyaux de plutonium pour une attaque nucléaire simultanée sur le Vatican, Jérusalem et La Mecque. Quand les armes disparaissent, Ethan et son équipe se retrouvent dans une course désespérée contre la montre pour les empêcher de tomber entre de mauvaises mains.",
+        realisateur: "Christopher McQuarrie",
+        acteurs: [
+            {acteur: "Tom Cruise"},
+            {acteur: "Rebecca Ferguson"},
+            {acteur: "Simon Pegg"},
+            {acteur: "Henry Cavill"},
+            {acteur: "Ving Rhames"},
+        ],
+        pins: [
+            {coords: [48.8666865, 2.3138946], label: "Le Grand Palais"},
+            {coords: [48.8604503, 2.3578119], label: "Hôtel Soubise"},
+            {coords: [48.8628402, 2.287142], label: "Place du Trocadéro"},
+            {coords: [48.8404811, 2.3698977], label: "Quai d'Austerlitz"},
+            {coords: [48.8737673, 2.2954441], label: "Arc de Triomphe"},
+        ],
+        zoom: 16,
+    },
+
+    {
+        id: "7",
+        titre: "Le diable s'habille en Prada",
+        image: "images/Diable_habille_en_prada.jpg",
+        texte: "Son diplôme de journalisme en poche, Andrea débarque à New York où elle décroche un premier emploi en tant qu'assistante de la rédactrice en chef d'un prestigieux magazine de mode. Un job de rêve. En apparence seulement car sa boss est en réalité un monstre tyrannique et caractériel ; Andrea, qui envisage son nouveau travail comme un tremplin vers une illustre carrière de journaliste, décide d'endurer les sévices de sa diablesse de patronne.",
+        realisateur: "David Frankel",
+        acteurs: [
+            {acteur: "Meryl Streep"},
+            {acteur: "Anne Hathaway"},
+            {acteur: "Emily Blunt"},
+            {acteur: "Stanley Tucci"},
+            {acteur: "Adrien Grenier"},
+        ],
+        pins: [
+            {coords: [48.8511529, 2.3494884], label: "Paris Médiéval"},
+            {coords: [48.8584075, 2.3375477], label: "Pont des Arts"},
+            {coords: [48.8655715, 2.3212248], label: "Place de la Concorde"},
+            {coords: [48.8657028, 2.2965064], label: "Palais Galliera"},
+            {coords: [48.8676934, 2.307626], label: "Avenue Montaigne"},
+            {coords: [48.866042, 2.3153496], label: "Petit Palais"},
+        ],
+        zoom: 16,
     },
 ];
 //Parcours le tableau de cartes pour trouver l'id de la carte
