@@ -14,7 +14,7 @@ body {
 
 /*mise en page de la navbar*/
 .navbar {
-    background-color: #0d0d0d;
+    background-color: #000000;
     padding: 20px 10px; 
     border-bottom: 1px solid rgba(255,255,255,0.1);
     position: sticky;
@@ -184,6 +184,7 @@ body {
         height: 60vh;
     }
 }
+
 
 
 
