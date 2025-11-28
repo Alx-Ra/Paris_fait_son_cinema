@@ -24,6 +24,7 @@ h2 {
     align-items: center;
     padding-left: 20px;
     padding-top: 10px;
+    z-index: 100;
 }
 
 .navbar h1 {
@@ -120,6 +121,7 @@ h2 {
     box-shadow: 0 0 15px rgba(300,200,20,0.3);
     cursor: url("https://github.com/Alx-Ra/Paris_fait_son_cinema/blob/master/images/curseur.png") 16 16, pointer;
 }
+
 
 
 
