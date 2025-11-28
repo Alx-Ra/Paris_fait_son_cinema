@@ -90,6 +90,12 @@ body {
   gap: 15px;
 }
 
+.infos-droite h2 {
+    color: #D1A54D;
+    font-size: 2.2rem;
+    margin: 0 0 10px 0;
+    text-shadow: 0 0 10px rgba(209, 165, 77, 0.4);
+
 #resume {
   text-align: justify;
   line-height: 1.5;
@@ -102,7 +108,6 @@ body {
     border-radius: 10px; /* Coins arrondis */
     border-left: 3px solid #D1A54D; /* Bordure dorée à gauche pour accentuer */
 }
-
 
 .infos-droite h3 {
     color: #D1A54D; 
@@ -207,6 +212,7 @@ body {
         height: 60vh;
     }
 }
+
 
 
 
