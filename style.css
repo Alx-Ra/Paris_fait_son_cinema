@@ -16,7 +16,6 @@ h2 {
 .navbar {
     background-color: #0d0d0d;
     padding: 20px 10px; 
-    border-bottom: 1px solid rgba(255,255,255,0.1);
     position: sticky;
     top: 0;
     display: flex;
@@ -75,6 +74,7 @@ h2 {
     box-shadow: 0 0 15px rgba(300,200,20,0.3);
     cursor: url("https://github.com/Alx-Ra/Paris_fait_son_cinema/blob/master/images/curseur.png") 16 16, pointer;
 }
+
 
 
 
