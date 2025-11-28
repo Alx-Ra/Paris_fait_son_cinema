@@ -95,18 +95,41 @@ body {
   line-height: 1.5;
 }
 
+/* Style pour les sections réalisateur et acteurs */
 #real, #act {
-  margin-top: 10px;
+    background: rgba(255, 255, 255, 0.02); 
+    padding: 15px; 
+    border-radius: 10px; /* Coins arrondis */
+    border-left: 3px solid #D1A54D; /* Bordure dorée à gauche pour accentuer */
 }
+
+
+.infos-droite h3 {
+    color: #D1A54D; 
+    font-size: 1.3rem; 
+    margin: 15px 0 5px 0; 
+    border-bottom: 2px solid rgba(209, 165, 77, 0.3); /* Ligne dorée sous le titre */
+    padding-bottom: 8px; 
+}
+
 
 #act ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none; 
+    padding: 0; 
+    margin: 8px 0 0 0; 
 }
 
+
 #act li {
-  margin-left: 10px;
+    padding: 5px 0; 
+    color: rgba(255, 255, 255, 0.85); 
+}
+
+/* Ajoute une étoile dorée avant chaque nom d'acteur */
+#act li::before {
+    content: "★ "; 
+    color: #D1A54D; 
+    margin-right: 8px; 
 }
 
 #map {
@@ -184,6 +207,7 @@ body {
         height: 60vh;
     }
 }
+
 
 
 
