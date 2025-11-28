@@ -38,53 +38,53 @@ Parcourez la ville, suivez nos itinéraires et laissez-vous guider sur les trace
     </nav>
     <!--création des cartes de film, avec un id différend pour chaque film-->
     <h2>FILMS</h2>
-    <div class="card-container">
+<div class="carousel-wrapper">
+    <button class="scroll-btn left" onclick="scrollCards('films')">‹</button>
+    <div class="card-container" id="films">
         <a href="view.html?id=1" style="text-decoration: none; color: black;">
             <div class="card">
                 <img src="images/Sous_la_Seine.jpg" alt="sous la Seine">
             </div>
         </a>
-
-
-         <a href="view.html?id=2" style="text-decoration: none; color: black;">
+        <a href="view.html?id=2" style="text-decoration: none; color: black;">
             <div class="card">
                 <img src="images/DaVinci_code.jpg" alt="DaVinci Code">
             </div>
         </a>
-
         <a href="view.html?id=4" style="text-decoration: none; color: black;">
             <div class="card">
                 <img src="images/Amelie_Poulain.jpg" alt="Le fabuleux destin d'Amélie Poulain">
             </div>
         </a>
-        
         <a href="view.html?id=5" style="text-decoration: none; color: black;">
             <div class="card">
                 <img src="images/Paris_je_taime.jpg" alt="Paris, je t'aime">
             </div>
         </a>
-        
         <a href="view.html?id=6" style="text-decoration: none; color: black;">
             <div class="card">
                 <img src="images/mission_impossible.jpg" alt="Mission Impossible : Fallout">
             </div>
         </a>
-
         <a href="view.html?id=7" style="text-decoration: none; color: black;">
             <div class="card">
                 <img src="images/Diable_habille_en_prada.jpg" alt="Le diable s'habille en Prada">
             </div>
         </a>
     </div>
+    <button class="scroll-btn right" onclick="scrollCards('films')">›</button>
+</div>
 
     <h2>SERIES</h2>
-    <div class="card-container">
+<div class="carousel-wrapper">
+    <button class="scroll-btn left" onclick="scrollCards('series')">‹</button>
+    <div class="card-container" id="series">
         <a href="view.html?id=3" style="text-decoration: none; color: black;">
             <div class="card">
                 <img src="images/Emily_in_Paris.jpg" alt="Emily in Paris">
             </div>
         </a>
     </div>
-</body>
+    <button class="scroll-btn right" onclick="scrollCards('series')">›</button>
+</div>
 
-</html>
