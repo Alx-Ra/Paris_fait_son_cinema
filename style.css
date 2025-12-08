@@ -122,17 +122,16 @@ h2 {
     cursor: url("https://github.com/Alx-Ra/Paris_fait_son_cinema/blob/master/images/curseur.png") 16 16, pointer;
 }
 
+footer{
+    background-color: #000000;
+    padding: 20px 10px; 
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+footer a {
+    color: #D1A54D;
+    text-shadow: 0 0 10px rgba(241,196,15,0.4);
+}
