@@ -161,6 +161,26 @@ const cartes = [
         ],
         zoom: 16,
     },
+
+    {
+        id: "8",
+        titre: "Moulin Rouge",
+        image: "images/Moulin_Rouge.jpg",
+        texte: "A la fin du XIXe siècle, dans le Paris de la Belle Epoque, Christian, un jeune poète désargenté, s'installe dans le quartier de Montmartre et découvre un univers où se mêlent sexe, drogue et french cancan, mais se rebelle contre ce milieu décadent en menant une vie de bohème. Il rêve d'écrire une grande pièce, et le peintre Henri de Toulouse-Lautrec est prêt à lui donner sa chance.",
+        realisateur: "Baz Luhrmann",
+        acteurs: [
+            {acteur: "Nicole Kidman"},
+            {acteur: "Natalie Mendoza"},
+            {acteur: "Ewan McGregor"},
+            {acteur: "Richard Roxburgh"},
+            {acteur: "John Leguizamo"},
+        ],
+        pins: [
+            {coords: [48.8841094, 2.3323564], label: "Moulin Rouge"},
+            {coords: [48.8582599, 2.2945006], label: "Tour Eiffel"},
+        ],
+        zoom: 16,
+    },
 ];
 //Parcours le tableau de cartes pour trouver l'id de la carte
 //  pour vérifier que c'est bien le même que l'id de l'URL.
