@@ -29,6 +29,8 @@ const cartes = [
         id: "2",
         titre: "DaVinci Code",
         image: "images/DaVinci_code.jpg",
+        heroImage: "https://tse3.mm.bing.net/th/id/OIP.cCVpKT-uRSBjTccM4c81gAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3",
+        herosubtitle: "Véritable plongée dans un labyrinthe de mystères, Da Vinci Code entraîne le spectateur dans une enquête haletante où l’histoire, l’art et les secrets cachés de l’humanité s’entremêlent dangereusement.",
         texte: "Une nuit, le professeur Robert Langdon, éminent spécialiste de l'étude des symboles, est appelé d'urgence au Louvre : le conservateur du musée a été assassiné, mais avant de mourir, il a laissé de mystérieux symboles... Avec l'aide de la cryptologue Sophie Neveu, Langdon va mener l'enquête et découvrir des signes dissimulés dans les oeuvres de Léonard de Vinci.",
         realisateur: "Ron Howard",
         acteurs: [
@@ -51,6 +53,8 @@ const cartes = [
         id: "3",
         titre: "Emily in Paris",
         image: "images/Emily_in_Paris.jpg",
+        heroImage: "https://images.lifestyleasia.com/wp-content/uploads/sites/7/2024/09/13133309/emily-in-paris-s4-1.jpg",
+        herosubtitle: "Entre glamour, romance et chocs culturels, Emily in Paris suit les aventures pétillantes d’une jeune Américaine propulsée dans la capitale française, où chaque jour devient un mélange de défis professionnels et de découvertes enchantées.",
         texte: "Emily Jane Cooper, une Américaine de Chicago, déménage à Paris, en France, suite à une promotion dans sa «boîte». En effet, la société de marketing où elle travaille vient d'acquérir Savoir, une société du même domaine basée en France, à laquelle l'agence d'Emily souhaite apporter une touche américaine.",
         realisateur: "Darren Star",
         acteurs: [
@@ -73,6 +77,8 @@ const cartes = [
         id: "4",
         titre: "Le fabuleux destin d'Amélie Poulain",
         image: "images/Amelie_Poulain.jpg",
+        heroImage: "https://wallpaperaccess.com/full/4062537.jpg",
+        herosubtitle: "Amélie Poulain raconte l’histoire tendre et poétique d’une jeune femme qui transforme le quotidien en magie, un petit geste à la fois.",
         texte: "Amélie, une jeune serveuse dans un bar de Montmartre, passe son temps à observer les gens et à laisser son imagination divaguer. Elle s'est fixé un but : faire le bien de ceux qui l'entourent. Elle invente alors des stratagèmes pour intervenir incognito dans leur existence. Le chemin d'Amélie est jalonné de rencontres : Georgette, la buraliste hypocondriaque ; Lucien, le commis d'épicerie ; Madeleine Wallace, la concierge portée sur le porto et les chiens empaillés ; Raymond Dufayel, son voisin.",
         realisateur: "Jean-Pierre Jeunet",
         acteurs: [
@@ -96,6 +102,8 @@ const cartes = [
         id: "5",
         titre: "Paris, je t'aime",
         image: "images/Paris_je_taime.jpg",
+        heroImage: "https://image.tmdb.org/t/p/original/ekCfR5ap8guLLmV9hMR9LCwPFoT.jpg",
+        herosubtitle: "Paris, je t’aime est un voyage sensible à travers la capitale, où chaque quartier révèle une histoire d’amour unique et inattendue.",
         texte: "Dix-huit histoires sur le thème de l'amour se déroulant dans des arrondissements parisiens: un célibataire vient en aide à une femme qui s'est évanouie sur la rue; un touriste américain regrette d'avoir fait de l'oeil à une fille dans le métro; une immigrée brésilienne dépose son bébé à la crèche afin d'aller s'occuper de celui d'une famille bourgeoise.",
         realisateur: "Olivier Assayas",
         acteurs: [
@@ -119,6 +127,8 @@ const cartes = [
         id: "6",
         titre: "Mission Impossible : Fallout",
         image: "images/mission_impossible.jpg",
+        heroImage: "https://th.bing.com/th/id/R.623370820ddf74e7bc2db07d6138d492?rik=7gaMUmo2j7J4oA&riu=http%3a%2f%2fwww.baltana.com%2ffiles%2fwallpapers-10%2fMission-Impossible-Fallout-HD-Desktop-Wallpaper-29486.jpg&ehk=Jpk225%2bwUtfSX%2fwlFM8lh4UIMzxa1VfwPAa1q3%2fffAg%3d&risl=&pid=ImgRaw&r=0",
+        herosubtitle: "Dans Mission: Impossible – Fallout, Ethan Hunt affronte sa mission la plus explosive et dangereuse.",
         texte: "Ethan Hunt et l'équipe du FMI se joignent à August Walker, l'assassin de la CIA, pour éviter une catastrophe d'une ampleur extrême. Le marchand d'armes John Lark et un groupe de terroristes connus prévoient utiliser trois noyaux de plutonium pour une attaque nucléaire simultanée sur le Vatican, Jérusalem et La Mecque. Quand les armes disparaissent, Ethan et son équipe se retrouvent dans une course désespérée contre la montre pour les empêcher de tomber entre de mauvaises mains.",
         realisateur: "Christopher McQuarrie",
         acteurs: [
@@ -142,6 +152,8 @@ const cartes = [
         id: "7",
         titre: "Le diable s'habille en Prada",
         image: "images/Diable_habille_en_prada.jpg",
+        heroImage: "https://media.ngroup.be/IMAGE/IMAGE-S1-00031/297554-le-diable-s-habille-en-prada.jpg",
+        herosubtitle: "Le Diable s’habille en Prada propulse une débutante au cœur du monde de la mode, où l’ambition se paie au prix fort.",
         texte: "Son diplôme de journalisme en poche, Andrea débarque à New York où elle décroche un premier emploi en tant qu'assistante de la rédactrice en chef d'un prestigieux magazine de mode. Un job de rêve. En apparence seulement car sa boss est en réalité un monstre tyrannique et caractériel ; Andrea, qui envisage son nouveau travail comme un tremplin vers une illustre carrière de journaliste, décide d'endurer les sévices de sa diablesse de patronne.",
         realisateur: "David Frankel",
         acteurs: [
@@ -265,6 +277,7 @@ if (carte) { // Verifie si l'objet carte existe.
     //Le texte s'affiche.
     container.innerHTML = "<p>Carte non trouvée.</p>";
 }
+
 
 
 
