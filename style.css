@@ -139,6 +139,8 @@ h2 {
 .card-container-glossaire {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card-glossaire {
@@ -176,11 +178,12 @@ h2 {
 
 footer{
     background-color: #000000;
-    padding: 20px 10px; 
+    padding: 50px 30px; 
     border-bottom: 1px solid rgba(255,255,255,0.1);
     display: flex;
     justify-content: center;
     text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
 }
 
 footer a {

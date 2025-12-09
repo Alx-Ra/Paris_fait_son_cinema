@@ -38,13 +38,14 @@ Parcourez la ville, suivez nos itinéraires et laissez-vous guider sur les trace
             <h1>Paris fait son cinéma</h1>
         </div>
         <div id="sommaire">
-            <a href="#films">Films</a>
-            <a href="#series">Series</a>
+            <a href="#list-film">Films</a>
+            <a href="#list-serie">Series</a>
             <a href="bibliographie.html">bibliographie</a>
+            <a href="#glossaire">Glossaire</a>
         </div>
     </nav>
     <!--création des cartes de film, avec un id différend pour chaque film-->
-    <h2 id="film">FILMS</h2>
+    <h2 id="list-film">FILMS</h2>
 <div class="carousel-wrapper">
     <button class="scroll-btn left" onclick="scrollCards('films')">‹</button>
     <div class="card-container" id="films">
@@ -107,7 +108,7 @@ Parcourez la ville, suivez nos itinéraires et laissez-vous guider sur les trace
     <button class="scroll-btn right" onclick="scrollCards('films')">›</button>
 </div>
 
-    <h2 id="serie">SERIES</h2>
+    <h2 id="list-serie">SERIES</h2>
 <div class="carousel-wrapper">
     <button class="scroll-btn left" onclick="scrollCards('series')">‹</button>
     <div class="card-container" id="series">
@@ -158,7 +159,8 @@ Parcourez la ville, suivez nos itinéraires et laissez-vous guider sur les trace
     setupCarousel('series');
 </script>
 
-<div class="card-container-glossaire">
+<h2>Glossaire</h2>
+<div id ="glossaire" class="card-container-glossaire">
     <a href="view.html?id=1" style="text-decoration: none;">
         <div class="card-glossaire">
             <div class="card-glossaire-infos">
@@ -173,6 +175,33 @@ Parcourez la ville, suivez nos itinéraires et laissez-vous guider sur les trace
             <div class="card-glossaire-infos">
                 <h2>Cryptologue</h2>
                 <p>Expert en sécurité des systèmes de communication, le cryptologue chiffre et déchiffre des informations numériques sensibles.</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="view.html?id=4" style="text-decoration: none;">
+        <div class="card-glossaire">
+            <div class="card-glossaire-infos">
+                <h2>Incognito</h2>
+                <p>En faisant en sorte qu'on ne soit pas reconnu (dans un lieu).</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="view.html?id=6" style="text-decoration: none;">
+        <div class="card-glossaire">
+            <div class="card-glossaire-infos">
+                <h2>Plutonium</h2>
+                <p>Le plutonium est un élément chimique, plus lourd que l'uranium qui n'existe pas à l'état naturel et dont tous les isotopes sont radioactifs.</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="view.html?id=7" style="text-decoration: none;">
+        <div class="card-glossaire">
+            <div class="card-glossaire-infos">
+                <h2>rédactice en chef</h2>
+                <p>journaliste qui anime une équipe de rédaction et veille au respect de la ligne éditoriale d'un média.</p>
             </div>
         </div>
     </a>
