@@ -8,6 +8,7 @@ const cartes = [
         id: "1",
         titre: "Sous la Seine",
         image: "images/Sous_la_Seine.jpg",
+        video: "https://www.tf1info.fr/player/897939d3-a9b3-4f6d-9673-c3f2333982c9/?autoplay=1&mute=1",
         heroImage: "https://i.headtopics.com/images/2024/8/28/bfmtv/sous-la-seine-depasse-les-100-millions-de-vues-et--sous-la-seine-depasse-les-100-millions-de-vues-et--B84BEB6CFCA0BE5055D59178A0BC2B5C.webp",
         herosubtitle: "En plein été, Paris est menacé par un mystérieux danger venu des profondeurs.Entre suspense et action, une course contre la montre s'engage pour sauver la ville.",
         texte: "Été 2024, Paris accueille pour la première fois les championnats du monde de triathlon sur la Seine. Sophia, brillante scientifique, est alertée par Mika, une jeune activiste dévouée à l'écologie, de la présence d'un grand requin dans les profondeurs du fleuve. Elles n'ont d'autre choix que de faire équipe avec Adil, commandant de la police fluviale pour éviter un bain de sang au cœur de la ville.",
@@ -29,6 +30,7 @@ const cartes = [
         id: "2",
         titre: "DaVinci Code",
         image: "images/DaVinci_code.jpg",
+        video: "",
         heroImage: "https://tse3.mm.bing.net/th/id/OIP.cCVpKT-uRSBjTccM4c81gAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3",
         herosubtitle: "Véritable plongée dans un labyrinthe de mystères, Da Vinci Code entraîne le spectateur dans une enquête haletante où l’histoire, l’art et les secrets cachés de l’humanité s’entremêlent dangereusement.",
         texte: "Une nuit, le professeur Robert Langdon, éminent spécialiste de l'étude des symboles, est appelé d'urgence au Louvre : le conservateur du musée a été assassiné, mais avant de mourir, il a laissé de mystérieux symboles... Avec l'aide de la cryptologue Sophie Neveu, Langdon va mener l'enquête et découvrir des signes dissimulés dans les oeuvres de Léonard de Vinci.",
@@ -77,6 +79,7 @@ const cartes = [
         id: "4",
         titre: "Le fabuleux destin d'Amélie Poulain",
         image: "images/Amelie_Poulain.jpg",
+        video: "https://www.tf1info.fr/player/f067f2ae-0461-442a-8fd3-c5aa9af11c82/",
         heroImage: "https://wallpaperaccess.com/full/4062537.jpg",
         herosubtitle: "Amélie Poulain raconte l’histoire tendre et poétique d’une jeune femme qui transforme le quotidien en magie, un petit geste à la fois.",
         texte: "Amélie, une jeune serveuse dans un bar de Montmartre, passe son temps à observer les gens et à laisser son imagination divaguer. Elle s'est fixé un but : faire le bien de ceux qui l'entourent. Elle invente alors des stratagèmes pour intervenir incognito dans leur existence. Le chemin d'Amélie est jalonné de rencontres : Georgette, la buraliste hypocondriaque ; Lucien, le commis d'épicerie ; Madeleine Wallace, la concierge portée sur le porto et les chiens empaillés ; Raymond Dufayel, son voisin.",
@@ -249,7 +252,7 @@ const cartes = [
     {
         id: "11",
         titre: "Inglorious Basterds",
-        image: "images/inglorious_Basterds.jpg",
+        image: "images/Inglorious_Basterds.jpg",
         heroImage: "https://img.lemde.fr/2009/05/11/0/0/600/400/1440/960/60/0/ill_1191648_cannes-basterds.jpg",
         herosubtitle: "Une équipe de soldats déterminés mène une guerre de l’ombre audacieuse, où chaque opération rapproche un peu plus d’un destin explosif pour le régime nazi.",
         texte: "Dans la France occupée de 1940, Shosanna Dreyfus assiste à l'exécution de sa famille tombée entre les mains du colonel nazi Hans Landa. Shosanna s'échappe de justesse et s'enfuit à Paris où elle se construit une nouvelle identité en devenant exploitante d'une salle de cinéma. Quelque part ailleurs en Europe, le lieutenant Aldo Raine forme un groupe de soldats juifs américains pour mener des actions punitives particulièrement sanglantes contre les nazis.",
@@ -264,6 +267,56 @@ const cartes = [
         pins: [
             {coords: [48.8958796, 2.3395348], label: "Bistrot La Renaissance"},
             {coords: [48.8348685, 2.3296415], label: "Chez Maurice"},
+        ],
+        zoom: 16,
+    },
+
+    {
+        id: "12",
+        titre: "fear the Walking Dead",
+        image: "images/Fear_the_walkingdead.jpg",
+        heroImage: "https://gonzomusic.fr/files/fear-walking-dead-season-2-images-details.jpg",
+        herosubtitle: "Sur une terre ravagée par l’effondrement, des survivants en quête d’espoir affrontent des choix impossibles où chaque pas peut être le dernier.",
+        texte: "Fear The Walking Dead est un drame osé qui s’intéresse au début de l’apocalypse zombie au travers d’une famille brisée. Se passant dans une ville où l’on vient pour fuir, pour cacher des secrets et pour enterrer son passé, une mystérieuse épidémie menace le peu de stabilité que Madison Clark, une conseillère dans un lycée, et Travis Manawa, un professeur d’anglais, ont réussi à instaurer. ",
+        realisateur: "Adam Davidson",
+        acteurs: [
+            {acteur: "Alycia Debman-Carey"},
+            {acteur: "Lennie James"},
+            {acteur: "Colman Domingo"},
+            {acteur: "Kim Dickens"},
+            {acteur: "Frank Dillane"},
+        ],
+        pins: [
+            {coords: [48.8499618, 2.3631985], label: "Club Bonnie"},
+            {coords: [48.8557254, 2.2875477], label: "Pont Bir-Hakeim"},
+            {coords: [48.8777457, 2.4082584], label: "métro Porte des Lilas"},
+            {coords: [48.8784656, 2.3376312], label: "Place Saint-George"},
+            {coords: [48.8626847, 2.2713928], label: "Rue Eugène Labiche"},
+        ],
+        zoom: 16,
+    },
+
+    {
+        id: "13",
+        titre: "Killing Eve",
+        image: "images/Killing_eve.jpg",
+        heroImage: "https://thumb.canalplus.pro/http/unsafe/1440x810/filters:quality(80)/img-hapi.canalplus.pro:80/ServiceImage/ImageID/104555985",
+        herosubtitle: "Une agente brillante et une tueuse insaisissable s’engagent dans un jeu dangereux où l’obsession devient aussi captivante que mortelle.",
+        texte: "Eve Polastri est une agent du MI-5 chargée d'enquêter et d'arrêter la terrible et talentueuse Villanelle, une tueuse psychopathe. Mais les deux femmes vont commencer à être obsédées l'une par l'autre. Commence alors un sombre jeu du chat et de la souris.",
+        realisateur: "Damon Thomas",
+        acteurs: [
+            {acteur: "Jodie Comer"},
+            {acteur: "Sandra Oh"},
+            {acteur: "Fiona Shaw"},
+            {acteur: "Kim Bodnia"},
+            {acteur: "Owen Mcdonnel"},
+        ],
+        pins: [
+            {coords: [48.8554872, 2.3367441], label: "Rue de Seine"},
+            {coords: [48.8545089, 2.3364351], label: "Rue de l'Echaudé"},
+            {coords: [48.8553897, 2.3378192], label: "Le Balto"},
+            {coords: [48.8696591, 2.3606541], label: "Rue de Lancry"},
+            {coords: [48.8689561, 2.3671691], label: "Canal Saint-Martin"},
         ],
         zoom: 16,
     },
@@ -305,14 +358,19 @@ if (carte) { // Verifie si l'objet carte existe.
     <div class="infos-droite">
     <p id="resume">${carte.texte}</p>
     <div id="real">
-    <h3>Réalisateur : </h3>
+    <h3>Réalisateur/Réalisatrice : </h3>
     <p>${carte.realisateur}</p>
     </div>
     <div id="act">
-    <h3>Acteurs : </h3>
+    <h3>Cast : </h3>
     <ul>${acteurs}</ul>
     </div>
     </div>
+    </div>
+    <div class="vidéo">
+    <iframe width="420" height="315"
+    src="${carte.video}">
+    </iframe>
     </div>
     <div class="map-lieu">
     <div id="labels">

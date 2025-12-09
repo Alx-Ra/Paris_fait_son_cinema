@@ -207,6 +207,22 @@ body {
     }
 }
 
+footer{
+    background-color: #000000;
+    padding: 50px 30px; 
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+footer a {
+    color: #D1A54D;
+    text-shadow: 0 0 10px rgba(241,196,15,0.4);
+    padding-right: 20px;
+    text-decoration: none;
+}
 
 
 
