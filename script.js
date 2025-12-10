@@ -320,6 +320,52 @@ const cartes = [
         ],
         zoom: 16,
     },
+
+    {
+        id: "14",
+        titre: "Lupin",
+        image: "images/lupin.jpg",
+        heroImage: "https://medias.gazette-drouot.com/prod/medias/mediatheque/69604.jpg",
+        herosubtitle: "Un maître du déguisement mène un jeu d’ombre et de lumière pour venger son père, défiant Paris et ceux qui croient pouvoir le piéger.",
+        texte: "En 1995, le jeune Assane Diop est bouleversé par le suicide de son père, accusé d'un vol qu'il n'a pas commis. Vingt-cinq ans plus tard, Assane organise le vol d'un collier ayant appartenu à Marie-Antoinette d'Autriche. Le bijou, aujourd'hui exposé au musée du Louvre, appartenait à la riche famille Pellegrini. Il veut se venger de cette famille ayant accusé à tort son père, en s'inspirant de son personnage fétiche : le « gentleman cambrioleur » Arsène Lupin",
+        realisateur: "Louis Leterrier",
+        acteurs: [
+            {acteur: "Omar Sy"},
+            {acteur: "Ludivine Sagnier"},
+            {acteur: "Clotilde Hesme"},
+            {acteur: "Hervé Pierre"},
+            {acteur: "Soufiane Guerrab"},
+        ],
+        pins: [
+            {coords: [48.8613223, 2.3354573], label: "Louvre"},
+        ],
+        zoom: 16,
+    },
+
+    {
+        id: "15",
+        titre: "Killing Eve",
+        image: "images/Killing_eve.jpg",
+        heroImage: "https://thumb.canalplus.pro/http/unsafe/1440x810/filters:quality(80)/img-hapi.canalplus.pro:80/ServiceImage/ImageID/104555985",
+        herosubtitle: "Une agente brillante et une tueuse insaisissable s’engagent dans un jeu dangereux où l’obsession devient aussi captivante que mortelle.",
+        texte: "Eve Polastri est une agent du MI-5 chargée d'enquêter et d'arrêter la terrible et talentueuse Villanelle, une tueuse psychopathe. Mais les deux femmes vont commencer à être obsédées l'une par l'autre. Commence alors un sombre jeu du chat et de la souris.",
+        realisateur: "Damon Thomas",
+        acteurs: [
+            {acteur: "Jodie Comer"},
+            {acteur: "Sandra Oh"},
+            {acteur: "Fiona Shaw"},
+            {acteur: "Kim Bodnia"},
+            {acteur: "Owen Mcdonnel"},
+        ],
+        pins: [
+            {coords: [48.8554872, 2.3367441], label: "Rue de Seine"},
+            {coords: [48.8545089, 2.3364351], label: "Rue de l'Echaudé"},
+            {coords: [48.8553897, 2.3378192], label: "Le Balto"},
+            {coords: [48.8696591, 2.3606541], label: "Rue de Lancry"},
+            {coords: [48.8689561, 2.3671691], label: "Canal Saint-Martin"},
+        ],
+        zoom: 16,
+    },
 ];
 //Parcours le tableau de cartes pour trouver l'id de la carte
 //  pour vérifier que c'est bien le même que l'id de l'URL.
@@ -409,10 +455,4 @@ if (carte) { // Verifie si l'objet carte existe.
     //Le texte s'affiche.
     container.innerHTML = "<p>Carte non trouvée.</p>";
 }
-
-
-
-
-
-
 
