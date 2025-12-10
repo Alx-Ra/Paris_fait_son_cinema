@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+    <!-- Primary Meta Tags -->
+<title>Paris fait son cinéma</title>
+<meta name="title" content="Paris fait son cinéma" >
+<meta name="description" content="Découvrez Paris à travers ses lieux de tournage.
+Parcourez la ville, suivez nos itinéraires et laissez-vous guider sur les traces du cinéma au cœur de la capitale." >
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" >
+<meta property="og:url" content="https://alx-ra.github.io/Paris_fait_son_cinema/" >
+<meta property="og:title" content="Paris fait son cinéma" >
+<meta property="og:description" content="Découvrez Paris à travers ses lieux de tournage.
+Parcourez la ville, suivez nos itinéraires et laissez-vous guider sur les traces du cinéma au cœur de la capitale." >
+<meta property="og:image" content="https://alx-ra.github.io/Paris_fait_son_cinema/images/logo.jpg" >
+
+<!-- X (Twitter) -->
+<meta property="twitter:card" content="summary_large_image" >
+<meta property="twitter:url" content="https://alx-ra.github.io/Paris_fait_son_cinema/" >
+<meta property="twitter:title" content="Paris fait son cinéma" >
+<meta property="twitter:description" content="Découvrez Paris à travers ses lieux de tournage.
+Parcourez la ville, suivez nos itinéraires et laissez-vous guider sur les traces du cinéma au cœur de la capitale." >
+<meta property="twitter:image" content="https://alx-ra.github.io/Paris_fait_son_cinema/images/logo.jpg" >
+
+<!-- Meta Tags Generated with https://metatags.io -->
+</head>
+<body>
+
+    <!--Ajout navbar-->
+    <nav class="navbar">
+        <div id="name">
+            <img id="logo" src="images/logo.jpg" alt="logo">
+            <h1>Paris fait son cinéma</h1>
+        </div>
+        <div id="sommaire">
+            <a href="#list-film">Films</a>
+            <a href="#list-serie">Series</a>
+            <a href="bibliographie.html">bibliographie</a>
+            <a href="#glossaire">Glossaire</a>
+        </div>
+    </nav>
+    <!--création des cartes de film, avec un id différend pour chaque film-->
+    <h2 id="list-film">FILMS</h2>
+<div class="carousel-wrapper">
+    <button class="scroll-btn left" onclick="scrollCards('films')">‹</button>
+    <div class="card-container" id="films">
+        <a href="view.html?id=1" style="text-decoration: none; color: black;">
+            <div class="card">
+                <img src="images/Sous_la_Seine.jpg" alt="sous la Seine">
+            </div>
+        </a>
+        <a href="view.html?id=2" style="text-decoration: none; color: black;">
+            <div class="card">
+                <img src="images/DaVinci_code.jpg" alt="DaVinci Code">
+            </div>
+        </a>
+        <a href="view.html?id=4" style="text-decoration: none; color: black;">
+            <div class="card">
+                <img src="images/Amelie_Poulain.jpg" alt="Le fabuleux destin d'Amélie Poulain">
+            </div>
+        </a>
+        <a href="view.html?id=5" style="text-decoration: none; color: black;">
+            <div class="card">
+                <img src="images/Paris_je_taime.jpg" alt="Paris, je t'aime">
+            </div>
+        </a>
+        <a href="view.html?id=6" style="text-decoration: none; color: black;">
+            <div class="card">
+                <img src="images/mission_impossible.jpg" alt="Mission Impossible : Fallout">
+            </div>
+        </a>
+        <a href="view.html?id=7" style="text-decoration: none; color: black;">
+            <div class="card">
+                <img src="images/Diable_habille_en_prada.jpg" alt="Le diable s'habille en Prada">
+            </div>
+        </a>
+
+        <a href="view.html?id=8" style="text-decoration: none; color: black;">
+            <div class="card">
+                <img src="images/Moulin_Rouge.jpg" alt="Moulin Rouge">
+            </div>
+        </a>
+
+        <a href="view.html?id=9" style="text-decoration: none; color: black;">
+            <div class="card">
+                <img src="images/Minuit_a_Paris.jpg" alt="Minuit à Paris">
+            </div>
+        </a>
+
+        <a href="view.html?id=10" style="text-decoration: none; color: black;">
+            <div class="card">
+                <img src="images/Inception.jpg" alt="Inception">
+            </div>
+        </a>
+
+        <a href="view.html?id=11" style="text-decoration: none; color: black;">
+            <div class="card">
+                <img src="images/Inglorious_Basterds.jpg" alt="Inglorious Basterds">
+            </div>
+        </a>
+
+    </div>
+    <button class="scroll-btn right" onclick="scrollCards('films')">›</button>
+</div>
+
+    <h2 id="list-serie">SERIES</h2>
+<div class="carousel-wrapper">
+    <button class="scroll-btn left" onclick="scrollCards('series')">‹</button>
+    <div class="card-container" id="series">
+        <a href="view.html?id=3" style="text-decoration: none; color: black;">
+            <div class="card">
+                <img src="images/Emily_in_Paris.jpg" alt="Emily in Paris">
+            </div>
+        </a>
+
+        <a href="view.html?id=12" style="text-decoration: none; color: black;">
+            <div class="card">
+                <img src="images/Fear_the_walkingdead.jpg" alt="Fear the Walking Dead">
+            </div>
+        </a>
+
+        <a href="view.html?id=13" style="text-decoration: none; color: black;">
+            <div class="card">
+                <img src="images/Killing_eve.jpg" alt="Killing Eve">
+            </div>
+        </a>
+
+        <a href="view.html?id=14" style="text-decoration: none; color: black;">
+            <div class="card">
+                <img src="images/lupin.jpg" alt="Lupin">
+            </div>
+        </a>
+
+        <a href="view.html?id=15" style="text-decoration: none; color: black;">
+            <div class="card">
+                <img src="images/Gossip_girl.jpg" alt="Gossip Girl">
+            </div>
+        </a>
+    </div>
+    <button class="scroll-btn right" onclick="scrollCards('series')">›</button>
+</div>
+
+    <!-- Script pour la navigation par flèches des carousels -->
+<script>
+    // Fonction pour faire défiler les cartes vers la gauche ou la droite
+    function scrollCards(containerId) {
+        const container = document.getElementById(containerId);
+        const direction = event.target.classList.contains('left') ? 'left' : 'right';
+        const scrollAmount = 440; // Distance de défilement (environ 2 cartes)
+        
+        if (direction === 'left') {
+            container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        } else {
+            container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        }
+    }
+    
+    // Configuration du carousel : gère l'activation/désactivation des boutons
+    function setupCarousel(containerId) {
+        const container = document.getElementById(containerId);
+        const wrapper = container.closest('.carousel-wrapper');
+        const leftBtn = wrapper.querySelector('.scroll-btn.left');
+        const rightBtn = wrapper.querySelector('.scroll-btn.right');
+        
+        // Met à jour l'état des boutons (activé/désactivé)
+        function updateButtons() {
+            leftBtn.disabled = container.scrollLeft <= 0; // Désactive la flèche gauche si on est au début
+            rightBtn.disabled = container.scrollLeft >= container.scrollWidth - container.clientWidth; // Désactive la flèche droite si on est à la fin
+        }
+        
+        // Écoute l'événement de défilement pour mettre à jour les boutons
+        container.addEventListener('scroll', updateButtons);
+        updateButtons(); // Initialise l'état des boutons au chargement
+    }
+    
+    // Initialisation des carousels pour les films et les séries
+    setupCarousel('films');
+    setupCarousel('series');
+</script>
+
+<h2>Glossaire</h2>
+<div id ="glossaire" class="card-container-glossaire">
+    <a href="view.html?id=1" style="text-decoration: none;">
+        <div class="card-glossaire">
+            <div class="card-glossaire-infos">
+                <h2>Triathlon</h2>
+                <p>Épreuve d'athlétisme comportant trois disciplines (natation, course cycliste et course à pied).</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="view.html?id=2" style="text-decoration: none;">
+        <div class="card-glossaire">
+            <div class="card-glossaire-infos">
+                <h2>Cryptologue</h2>
+                <p>Expert en sécurité des systèmes de communication, le cryptologue chiffre et déchiffre des informations numériques sensibles.</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="view.html?id=4" style="text-decoration: none;">
+        <div class="card-glossaire">
+            <div class="card-glossaire-infos">
+                <h2>Incognito</h2>
+                <p>En faisant en sorte qu'on ne soit pas reconnu (dans un lieu).</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="view.html?id=6" style="text-decoration: none;">
+        <div class="card-glossaire">
+            <div class="card-glossaire-infos">
+                <h2>Plutonium</h2>
+                <p>Le plutonium est un élément chimique, plus lourd que l'uranium qui n'existe pas à l'état naturel et dont tous les isotopes sont radioactifs.</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="view.html?id=7" style="text-decoration: none;">
+        <div class="card-glossaire">
+            <div class="card-glossaire-infos">
+                <h2>rédactice en chef</h2>
+                <p>journaliste qui anime une équipe de rédaction et veille au respect de la ligne éditoriale d'un média.</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="view.html?id=8" style="text-decoration: none;">
+        <div class="card-glossaire">
+            <div class="card-glossaire-infos">
+                <h2>Bohème</h2>
+                <p>Personne qui vit en marge, sans règles ni souci du lendemain.</p>
+            </div>
+        </div>
+    </a>
+
+    <a href="view.html?id=13" style="text-decoration: none;">
+        <div class="card-glossaire">
+            <div class="card-glossaire-infos">
+                <h2>MI-5</h2>
+                <p>Le MI5, ou Service de sécurité britannique, est l'agence responsable de la sécurité intérieure du Royaume-Uni.</p>
+            </div>
+        </div>
+    </a>
+</div>
+
+
+<footer>
+    <a href="mentions légales.pdf">Mentions légales</a>
+    <a href="mailto:nratsimi@gmail.com?subject=Question&body=Une%20question%20sur%20une%20visite">Contact</a>
+    <a href="https://alx-ra.github.io/Paris_fait_son_cinema/">Paris fait son cinéma</a> © 2025 by 
+    <a href="https://github.com/Alx-Ra">Alex & Nina</a> is licensed under 
+    <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+    <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+    <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+</footer>
+
+</body>
+</html>
+
