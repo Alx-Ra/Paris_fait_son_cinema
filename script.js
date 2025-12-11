@@ -370,6 +370,78 @@ const cartes = [
         ],
         zoom: 16,
     },
+
+    {
+        id: "16",
+        titre: "Dix pour cent",
+        image: "images/dix-pour-cent.jpg",
+        heroImage: "https://bullesdeculture.com/bdc-content/uploads/2015/10/DIXPOURCENT-affiche-e1742049491203-660x330.jpg",
+        herosubtitle: "Au cœur d’une agence où tout peut déraper, les agents jonglent entre crises de stars et urgences improbables pour sauver l’image de leurs talents.",
+        texte: "Chaque jour, Andréa, Mathias, Gabriel et Arlette, agents artistiques et associés principaux de l’agence artistique ASK (l’agence Samuel-Kerr), jonglent avec de délicates situations et défendent leur vision du métier d'acteur. Ils mêlent savamment art et business, quitte à manipuler les gens du métier pour leur faire accepter leur vision.",
+        realisateur: "Danièle Thompson",
+        acteurs: [
+            {acteur: "Camille Cottin"},
+            {acteur: "Thibault de Montalembert"},
+            {acteur: "Grégory Montel"},
+            {acteur: "Liliane Rovère"},
+            {acteur: "Fanny Sidney"},
+        ],
+        pins: [
+            {coords: [48.8619915, 2.339735], label: "Extérieur Agence ASK"},
+            {coords: [48.8705334, 2.3476486], label: "Le Grand Rex"},
+            {coords: [48.8636181, 2.3353282], label: "Brasserie du Louvre"},
+            {coords: [48.8655715, 2.3212248], label: "Place de la Concorde"},
+            {coords: [48.8648492, 2.3384224], label: "Galerie de Valois"},
+        ],
+        zoom: 16,
+    },
+
+    {
+        id: "17",
+        titre: "Family Business",
+        image: "images/family-business.jpg",
+        heroImage: "https://www.doitinparis.com/files/2019/culture/cine-series/series/06/family-business/family-business-serie-netflix.jpg",
+        herosubtitle: "Quand une famille bancale transforme une idée folle en business improbable, chaque plan dérape en aventures aussi risquées qu’hilarantes.",
+        texte: "Apprenant que le cannabis sera légalisé, Joseph, un entrepreneur en faillite décide avec l'aide de sa famille et de ses amis de transformer la boucherie casher de son père et d'ouvrir le premier coffee shop de marijuana en France.",
+        realisateur: "Igor Gotesman",
+        acteurs: [
+            {acteur: "Gérard Darmon"},
+            {acteur: "Jonathan Cohen"},
+            {acteur: "Julia Piaton"},
+            {acteur: "Liliane Rovère"},
+            {acteur: "Louise Coldefy"},
+        ],
+        pins: [
+            {coords: [48.8603823, 2.360742], label: "Le Marais"},
+        ],
+        zoom: 16,
+    },
+
+    {
+        id: "18",
+        titre: "Modern Family",
+        image: "images/modern-family.jpg",
+        heroImage: "https://www.looper.com/img/gallery/modern-family-scenes-that-had-fans-bawling/the-family-bids-farewell-with-one-last-selfie-in-the-finale-part-two-1695419598.jpg",
+        herosubtitle: "Entre amour, chaos et situations improbables, une famille pas vraiment ordinaire transforme chaque jour en aventure tendre et hilarante.",
+        texte: "La série montre les trois foyers de la famille américaine Pritchett, sous la forme de documentaire. Jay Pritchett, le père, s'est remarié à Gloria Delgado, une femme colombienne bien plus jeune que lui qui a un fils, Manny. De son premier mariage, Jay a eu Claire, mariée à Phil Dunphy avec qui elle a trois enfants, Haley, Alex et Luke, et Mitchell, marié à Cameron. La série commence alors que Mitchell et Cameron reviennent du Viet Nam où ils ont adopté une fillette de huit mois, Lily.",
+        realisateur: "Steven Levitan",
+        acteurs: [
+            {acteur: "Sofía Vergara"},
+            {acteur: "Ed O'Neill"},
+            {acteur: "Julie Bowen"},
+            {acteur: "Ty Burrell"},
+            {acteur: "Jesse Tyler Ferguson"},
+            {acteur: "Eric Stonestreet"},
+        ],
+        pins: [
+            {coords: [48.8673446, 2.3653087], label: "Hôtel Crowne Plaza"},
+            {coords: [48.8652214, 2.3618083], lable: "Quartier du Temple"},
+            {coords: [48.8603823, 2.360742], label: "Le Marais"},
+            {coords: [48.8547614, 2.3552119], label: "Bistrot Chez Julien"},
+            {coords: [48.8530896, 2.3533138], label: "La Brasserie de l'Isle Saint-Louis"},
+        ],
+        zoom: 16,
+    },
 ];
 //Parcours le tableau de cartes pour trouver l'id de la carte
 //  pour vérifier que c'est bien le même que l'id de l'URL.

@@ -181,9 +181,18 @@ footer{
     padding: 50px 30px; 
     border-bottom: 1px solid rgba(255,255,255,0.1);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     border-top: 1px solid rgba(255,255,255,0.1);
+    color: #D1A54D;
+    text-shadow: 0 0 10px rgba(241,196,15,0.4);
+}
+
+footer img {
+    max-width: 1em;
+    max-height:1em;
+    margin-left: .2em;
 }
 
 footer a {
@@ -191,4 +200,9 @@ footer a {
     text-shadow: 0 0 10px rgba(241,196,15,0.4);
     padding-right: 20px;
     text-decoration: none;
+}
+
+footer p {
+    max-width: 300px;
+    line-height: 1.4;
 }
