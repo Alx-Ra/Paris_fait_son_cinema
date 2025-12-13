@@ -552,20 +552,22 @@ if (carte) { // Verifie si l'objet carte existe.
     <div id="labels">
     <h3>Lieux de tournage : </h3>
     <ul>${labels}</ul>
-    </div>
+   </div>
     <div id="map" style="width:400px;height:300px;margin-top:20px;border-radius:10px;"></div>
     </div>
     ${carte.itineraire ? `
     <div class="itineraire-section">
-    <div class="itineraire-box">
-        <div class="itineraire-header">
-            <h3>Votre balade parisienne</h3>
-            <span class="duration-badge">⏱️ Environ 2h30</span>
+        <div class="itineraire-box">
+            <div class="itineraire-header">
+                <h3>Votre balade parisienne</h3>
+                <span class="duration-badge">⏱️ Environ 2h30</span>
+            </div>
+            <p class="itineraire-text">${carte.itineraire}</p>
         </div>
-        <p class="itineraire-text">${carte.itineraire}</p>
     </div>
-</div>
-` : ''}
+    ` : ''}
+    </div>
+    `;
 
     //Initialise une map Leaflet.
     const map = L.map("map"); 
@@ -595,6 +597,7 @@ if (carte) { // Verifie si l'objet carte existe.
     //Le texte s'affiche.
     container.innerHTML = "<p>Carte non trouvée.</p>";
 }
+
 
 
 
