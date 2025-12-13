@@ -608,12 +608,12 @@ if (carte) { // Verifie si l'objet carte existe.
     //associe au marqueur une popup avec son label.
     L.marker(pin.coords).addTo(map).bindPopup(`${pin.label}`);
 });
-} 
 
 } else { //Si l'objet carte n'est pas trouvé.
     //Le texte s'affiche.
     container.innerHTML = "<p>Carte non trouvée.</p>";
 }
+
 
 
 
