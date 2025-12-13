@@ -580,8 +580,10 @@ if (carte) { // Verifie si l'objet carte existe.
             <ul>${labels}</ul>
         </div>
         <div id="map" style="width:400px;height:300px;margin-top:20px;border-radius:10px;"></div>
-    </div>
-    `}
+      </div>
+    `; 
+
+    //Initialise une map Leaflet.
 
     //Initialise une map Leaflet.
     const map = L.map("map"); 
@@ -606,11 +608,13 @@ if (carte) { // Verifie si l'objet carte existe.
     //associe au marqueur une popup avec son label.
     L.marker(pin.coords).addTo(map).bindPopup(`${pin.label}`);
 });
+} 
 
 } else { //Si l'objet carte n'est pas trouvé.
     //Le texte s'affiche.
     container.innerHTML = "<p>Carte non trouvée.</p>";
 }
+
 
 
 
