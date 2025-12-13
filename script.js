@@ -581,6 +581,7 @@ if (carte) { // Verifie si l'objet carte existe.
         </div>
         <div id="map" style="width:400px;height:300px;margin-top:20px;border-radius:10px;"></div>
       </div>
+       `}
     `; 
 
     //Initialise une map Leaflet.
@@ -613,6 +614,7 @@ if (carte) { // Verifie si l'objet carte existe.
     //Le texte s'affiche.
     container.innerHTML = "<p>Carte non trouvée.</p>";
 }
+
 
 
 
