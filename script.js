@@ -552,7 +552,7 @@ if (carte) { // Verifie si l'objet carte existe.
     <div id="labels">
     <h3>Lieux de tournage : </h3>
     <ul>${labels}</ul>
-   </div>
+    </div>
     <div id="map" style="width:400px;height:300px;margin-top:20px;border-radius:10px;"></div>
     </div>
     ${carte.itineraire ? `
@@ -560,9 +560,17 @@ if (carte) { // Verifie si l'objet carte existe.
         <div class="itineraire-box">
             <div class="itineraire-header">
                 <h3>Votre balade parisienne</h3>
-                <span class="duration-badge">⏱️Environ 2h30</span>
+                <span class="duration-badge">Environ 2h30</span>
             </div>
             <p class="itineraire-text">${carte.itineraire}</p>
+        </div>
+        <div class="lieux-cliquables">
+            <h3>Lieux a visiter :</h3>
+            <ul>
+                ${carte.pins.map((pin, index) => `
+                    <li>${index + 1}. ${pin.label}</li>
+                `).join('')}
+            </ul>
         </div>
     </div>
     ` : ''}
@@ -597,6 +605,7 @@ if (carte) { // Verifie si l'objet carte existe.
     //Le texte s'affiche.
     container.innerHTML = "<p>Carte non trouvée.</p>";
 }
+
 
 
 
