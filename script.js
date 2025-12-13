@@ -560,7 +560,7 @@ if (carte) { // Verifie si l'objet carte existe.
         <div class="itineraire-box">
             <div class="itineraire-header">
                 <h3>Votre balade parisienne</h3>
-                <span class="duration-badge">Environ 2h30</span>
+                <span class="duration-badge">⏱️Environ 2h30</span>
             </div>
             <p class="itineraire-text">${carte.itineraire}</p>
         </div>
@@ -597,6 +597,7 @@ if (carte) { // Verifie si l'objet carte existe.
     //Le texte s'affiche.
     container.innerHTML = "<p>Carte non trouvée.</p>";
 }
+
 
 
 
