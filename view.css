@@ -238,6 +238,122 @@ footer p {
     line-height: 1.4;
 }
 
+/* Section Itineraire amelioree */
+.itineraire-section {
+    margin: 40px 0;
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.itineraire-box {
+    background: linear-gradient(135deg, rgba(209, 165, 77, 0.1) 0%, rgba(209, 165, 77, 0.05) 100%);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(209, 165, 77, 0.3);
+    margin-bottom: 30px;
+}
+
+.itineraire-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.itineraire-header h3 {
+    color: #D1A54D;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.duration-badge {
+    background: #D1A54D;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    white-space: nowrap;
+}
+
+.itineraire-text {
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 0;
+}
+
+.itineraire-text strong {
+    color: #D1A54D;
+    font-weight: 600;
+}
+
+/* Section Lieux cliquables */
+.lieux-cliquables {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 25px 30px;
+    border-radius: 15px;
+    border-left: 4px solid #D1A54D;
+}
+
+.lieux-cliquables h3 {
+    color: #D1A54D;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.lieux-cliquables ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 12px;
+}
+
+.lieux-cliquables li {
+    padding: 12px 18px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.9);
+    border-left: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.lieux-cliquables li:hover {
+    background: rgba(209, 165, 77, 0.15);
+    border-left-color: #D1A54D;
+    transform: translateX(5px);
+    color: #D1A54D;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .itineraire-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .itineraire-box {
+        padding: 20px;
+    }
+    
+    .lieux-cliquables {
+        padding: 20px;
+    }
+}
 
 
 
