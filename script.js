@@ -495,7 +495,7 @@ const cartes = [
         image: "images/the-good-place.jpg",
         heroImage: "https://cache.marieclaire.fr/data/photo/w1200_h630_c17/5m/lecons-vies-the-good-place.jpg",
         herosubtitle: "Propulsée dans un paradis pas si parfait, une femme imparfaite doit apprendre à devenir meilleure pour éviter que tout l’au-delà ne s’effondre avec elle.",
-        texte: "À sa mort, Eleanor Shellstrop se retrouve au Bon Endroit [N 1], là où seules les personnes exceptionnelles aux âmes pures arrivent, les autres étant envoyées au Mauvais Endroit. Chaque nouvel arrivant est logé dans une maison idéale, aménagée selon ses goûts, puis fait connaissance avec son âme sœur. Mais en réalité, Eleanor n'est pas vraiment une bonne personne et elle comprend qu'elle a été envoyée au Bon Endroit par erreur. Peu après son arrivée, des choses étranges se produisent.",
+        texte: "À sa mort, Eleanor Shellstrop se retrouve au Bon Endroit, là où seules les personnes exceptionnelles aux âmes pures arrivent, les autres étant envoyées au Mauvais Endroit. Chaque nouvel arrivant est logé dans une maison idéale, aménagée selon ses goûts, puis fait connaissance avec son âme sœur. Mais en réalité, Eleanor n'est pas vraiment une bonne personne et elle comprend qu'elle a été envoyée au Bon Endroit par erreur. Peu après son arrivée, des choses étranges se produisent.",
         realisateur: "Rebecca Asher",
         acteurs: [
             {acteur: "Kristen Bell"},
