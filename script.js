@@ -567,32 +567,30 @@ if (carte) { // Verifie si l'objet carte existe.
     src="${carte.video}">
     </iframe>
     </div>
- <div class="map-lieu">
-    <div id="labels">
-    <h3>Lieux de tournage : </h3>
-    <ul>${labels}</ul>
+    <div class="map-itineraire">
+    <div class="map-lieu">
+       <div id="map"></div>
     </div>
-    <div id="map" style="width:400px;height:300px;margin-top:20px;border-radius:10px;"></div>
+       ${carte.itineraire ? `
+       <div class="itineraire-section">
+           <div class="itineraire-box">
+               <div class="itineraire-header">
+                   <h3>Votre balade parisienne</h3>
+                   <span class="duration-badge">Environ 2h30</span>
+               </div>
+               <p class="itineraire-text">${carte.itineraire}</p>
+           </div>
+           <div class="lieux-cliquables">
+               <h3>Lieux a visiter :</h3>
+               <ul>
+                   ${carte.pins.map((pin, index) => `
+                       <li>${index + 1}. ${pin.label}</li>
+                   `).join('')}
+               </ul>
+           </div>
+       </div>
+       ` : ''}
     </div>
-    ${carte.itineraire ? `
-    <div class="itineraire-section">
-        <div class="itineraire-box">
-            <div class="itineraire-header">
-                <h3>Votre balade parisienne</h3>
-                <span class="duration-badge">Environ 2h30</span>
-            </div>
-            <p class="itineraire-text">${carte.itineraire}</p>
-        </div>
-        <div class="lieux-cliquables">
-            <h3>Lieux a visiter :</h3>
-            <ul>
-                ${carte.pins.map((pin, index) => `
-                    <li>${index + 1}. ${pin.label}</li>
-                `).join('')}
-            </ul>
-        </div>
-    </div>
-    ` : ''}
     ${carte.itineraire ? `
     <div class="films-proximite-section">
         <h2 class="section-title">🎬 Films et séries tournés à proximité</h2>

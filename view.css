@@ -54,6 +54,16 @@ body {
 
 }
 
+.map-itineraire {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    max-width: 1200px;
+    width: 100%;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
 .map-lieu {
   display: flex;
   justify-content: center;
@@ -62,12 +72,12 @@ body {
   gap: 60px;
 }
 
-#labels {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+#map {
+    width:400px;
+    height:300px;
+    margin-top:20px;
+    border-radius:10px;
 }
-
 
 .img-infos {
   display: flex;
@@ -431,16 +441,4 @@ footer p {
         font-size: 1.5rem;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
