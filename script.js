@@ -3,6 +3,7 @@ const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
 
 //Un tableau avec le détails de toutes les cartes.
+// Chaque objet représente un film/série avec ses infos et lieux de tournage
 const cartes = [
     {
         id: "1",
@@ -527,15 +528,13 @@ const container = document.getElementById("card-details");
 //Injecter dynamiquement² les éléments de la carte dans le view.html.
 if (carte) { // Verifie si l'objet carte existe.
 
+    // Génère la liste HTML des acteurs
     const acteurs = carte.acteurs
     ? carte.acteurs.map(i => `<li>${i.acteur}</li>`).join("")
     : "Aucun acteurs renseignés";
 
-    const labels = carte.pins
-    ? carte.pins.map(j => `<li>${j.label}</li>`).join("")
-    : "Aucun lieux renseignés";
     // Insère dynamiquement le contenu HTML dans le container.
-    // + J'insère la section hero.
+    // Création dynamique : hero, infos, carte, itinéraire et films proches
     container.innerHTML = `
 
     <section class="hero" style="background-image: url('${carte.heroImage || carte.image}');">
@@ -712,21 +711,3 @@ function calculerDistanceApprox(carte1, carte2) {
     
     return distanceMin.toFixed(1); // Arrondi à 1 décimale
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
