@@ -564,23 +564,23 @@ if (carte) { // Verifie si l'objet carte existe.
         </div>
         ${carte.video ? `
         <div class="vidéo">
-                <iframe
-                width="420"
-                height="315"
-                src="${carte.video}"
-                title="Bande-annonce ${carte.titre}"
-                allowfullscreen>
-            </iframe>
-        </div>
-        ` : `
-        <div class="video-indisponible">
-            <p>🎬 Bande-annonce indisponible pour ce programme.</p>
-        </div>
-        `}
-        <div class="map-itineraire">
-        <div class="map-lieu">
-        <div id="map"></div>
-        </div>
+            <iframe
+            width="420"
+            height="315"
+            src="${carte.video}"
+            title="Bande-annonce ${carte.titre}"
+            allowfullscreen>
+        </iframe>
+    </div>
+    ` : `
+    <div class="video-indisponible">
+        <p>🎬 Bande-annonce indisponible pour ce programme.</p>
+    </div>
+    `}
+    <div class="map-itineraire">
+    <div class="map-lieu">
+       <div id="map"></div>
+    </div>
        ${carte.itineraire ? `
        <div class="itineraire-section">
            <div class="itineraire-box">
