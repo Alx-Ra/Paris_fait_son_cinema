@@ -593,10 +593,25 @@ if (carte) { // Verifie si l'objet carte existe.
         </div>
     </div>
     ` : ''}
+    ${carte.itineraire ? `
+    <div class="films-proximite-section">
+        <h2 class="section-title">🎬 Films et séries tournés à proximité</h2>
+        <div class="films-proximite-grid">
+            ${trouverFilmsProches(carte).map(film => `
+                <a href="view.html?id=${film.id}" class="film-proximite-card">
+                    <img src="${film.image}" alt="${film.titre}">
+                    <div class="film-proximite-info">
+                        <h4>${film.titre}</h4>
+                        <p>📍 ${calculerDistanceApprox(carte, film)} km</p>
+                    </div>
+                </a>
+            `).join('')}
+        </div>
+    </div>
+    ` : ''}
+    
     </div>
     `;
-
-
 
     //Initialise une map Leaflet.
     const map = L.map("map"); 
@@ -625,6 +640,69 @@ if (carte) { // Verifie si l'objet carte existe.
 } else { //Si l'objet carte n'est pas trouvé.
     //Le texte s'affiche.
     container.innerHTML = "<p>Carte non trouvée.</p>";
+}
+// Fonction pour trouver les films tournés à proximité
+function trouverFilmsProches(carteActuelle) {
+    const filmsProches = [];
+    
+    cartes.forEach(autreCarte => {
+        // Ne pas inclure le film actuel
+        if (autreCarte.id === carteActuelle.id) return;
+        
+        // Vérifier si au moins un lieu est proche
+        const estProche = autreCarte.pins.some(pinAutre => 
+            carteActuelle.pins.some(pinActuel => {
+                const distance = calculerDistance(
+                    pinActuel.coords[0], 
+                    pinActuel.coords[1],
+                    pinAutre.coords[0], 
+                    pinAutre.coords[1]
+                );
+                return distance < 3; // Moins de 3 km
+            })
+        );
+        
+        if (estProche) {
+            filmsProches.push(autreCarte);
+        }
+    });
+    
+    // Retourner maximum 3 films
+    return filmsProches.slice(0, 3);
+}
+
+// Fonction pour calculer la distance entre deux points (formule de Haversine)
+function calculerDistance(lat1, lon1, lat2, lon2) {
+    const R = 6371; // Rayon de la Terre en km
+    const dLat = (lat2 - lat1) * Math.PI / 180;
+    const dLon = (lon2 - lon1) * Math.PI / 180;
+    const a = 
+        Math.sin(dLat/2) * Math.sin(dLat/2) +
+        Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+        Math.sin(dLon/2) * Math.sin(dLon/2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+    return R * c;
+}
+
+// Fonction pour calculer la distance approximative entre deux films
+function calculerDistanceApprox(carte1, carte2) {
+    let distanceMin = Infinity;
+    
+    carte1.pins.forEach(pin1 => {
+        carte2.pins.forEach(pin2 => {
+            const dist = calculerDistance(
+                pin1.coords[0], 
+                pin1.coords[1],
+                pin2.coords[0], 
+                pin2.coords[1]
+            );
+            if (dist < distanceMin) {
+                distanceMin = dist;
+            }
+        });
+    });
+    
+    return distanceMin.toFixed(1); // Arrondi à 1 décimale
 }
 
 
