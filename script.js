@@ -593,9 +593,9 @@ if (carte) { // Verifie si l'objet carte existe.
            <div class="lieux-cliquables">
                <h3>Lieux a visiter :</h3>
                <ul>
-                   ${carte.pins.map((pin, index) => `
-                       <li>${index + 1}. ${pin.label}</li>
-                   `).join('')}
+               ${carte.pins.map((pin, index) => `
+                   <li>${index + 1}. ${pin.label}</li>
+               `).join('')}
                </ul>
            </div>
        </div>
