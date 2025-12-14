@@ -51,8 +51,7 @@ const cartes = [
             {coords: [48.8588, 2.2505], label: "Bois de Boulogne"},
         ],
         zoom: 16,
-        itineraire: "Votre balade débute devant <strong>le musée du Louvre</strong>, lieu emblématique du film et véritable incontournable parisien. En passant devant la pyramide et les façades du palais, vous retrouvez l’atmosphère mystérieuse qui ouvre l’intrigue. Vous continuez ensuite vers l’imposante <strong>église Saint-Sulpice</strong> dont l’architecture grandiose et le célèbre gnomon rappellent certaines des scènes les plus marquantes du récit. La promenade vous mène ensuite jusqu’à <strong>la place Vendôme</strong> où se dresse le prestigieux <strong>Hôtel Ritz</strong>, symbole d’élégance et décor clé du film. Enfin pour conclure votre parcours, vous rejoignez <strong>le bois de Boulogne</strong> qui offre une pause hors du tumulte parisien tout en constituant l’un des décors de l’enquête. Une balade qui mêle de grands monuments, des secrets d’histoire et une ambiance mystique digne du film.
-
+        itineraire: "Votre balade débute devant <strong>le musée du Louvre</strong>, lieu emblématique du film et véritable incontournable parisien. En passant devant la pyramide et les façades du palais, vous retrouvez l’atmosphère mystérieuse qui ouvre l’intrigue. Vous continuez ensuite vers l’imposante <strong>église Saint-Sulpice</strong> dont l’architecture grandiose et le célèbre gnomon rappellent certaines des scènes les plus marquantes du récit. La promenade vous mène ensuite jusqu’à <strong>la place Vendôme</strong> où se dresse le prestigieux <strong>Hôtel Ritz</strong>, symbole d’élégance et décor clé du film. Enfin pour conclure votre parcours, vous rejoignez <strong>le bois de Boulogne</strong> qui offre une pause hors du tumulte parisien tout en constituant l’un des décors de l’enquête. Une balade qui mêle de grands monuments, des secrets d’histoire et une ambiance mystique digne du film."
     },
 
     {
@@ -609,6 +608,7 @@ if (carte) { // Verifie si l'objet carte existe.
     //Le texte s'affiche.
     container.innerHTML = "<p>Carte non trouvée.</p>";
 }
+
 
 
 
