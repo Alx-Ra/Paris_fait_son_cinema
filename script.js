@@ -76,7 +76,7 @@ const cartes = [
             {coords: [48.8634697, 2.3135181], label: "Pont Alexandre III"},
         ],
         zoom: 16,
-        itineraire: "Votre balade commence sur la <strong>Place de l’Estrapade</strong>. Vous poursuivez vers la <strong>Place de Valois</strong> et le <strong>Palais-Royal</strong>. La promenade continue au <strong>Café de l’Homme</strong> avant de terminer sur le <strong>Pont Alexandre III</strong>."
+        itineraire: "Votre balade commence sur la charmante <strong>Place de l’Estrapade</strong> où l’on retrouve le côté dynamique et vivant de la vie parisienne que vit Emily. Vous poursuivez vers la <strong>Place de Valois</strong> et le somptueux <strong>Palais-Royal</strong> dont les jardins et galeries évoquent parfaitement le style de la série. La promenade continue au <strong>Café de l’Homme</strong> avec sa vue imprenable sur la <strong>Tour Eiffel</strong>, avant de terminer sur le <strong>Pont Alexandre III</strong> ; symbole de Paris romantique et iconique qui offre un cadre parfait pour clore cette balade pleine de charme et de glamour."
     },
 
     {
@@ -103,7 +103,7 @@ const cartes = [
             {coords: [48.8716, 2.3580], label: "Canal Saint-Martin"},
         ],
         zoom: 16,
-        itineraire: "Votre balade commence sur la <strong>butte Montmartre</strong> où les ruelles et les façades colorées rappellent l’atmosphère poétique du film. En descendant, vous faites halte au <strong>Café des Deux Moulins</strong>, véritable repère d’Amélie dont le charme rétro invite à une petite pause gourmande. Quelques pas plus loin, le <strong>marché de la Butte</strong> vous plonge dans la vie de quartier avec ses étals et ses couleurs typiquement parisiennes. Votre promenade se poursuit au <strong>square Louise-Michel</strong> d’où la vue sur le <strong>Sacré-Cœur</strong> offre un décor digne d’une scène de cinéma. Enfin, vous terminez au <strong>Canal Saint-Martin</strong>, endroit emblématique où Amélie aime jouer avec les ricochets et qui apporte une touche finale pleine de douceur à votre parcours."
+        itineraire: "Votre balade commence sur la <strong>butte Montmartre</strong> où les ruelles et les façades colorées rappellent l’atmosphère poétique du film. En descendant, vous faites halte au <strong>Café des Deux Moulins</strong>, véritable repère d’Amélie dont le charme rétro invite à une petite pause gourmande. Quelques pas plus loin, le <strong>marché de la Butte</strong> vous plonge dans la vie de quartier avec ses étals et ses couleurs typiquement parisiennes. Votre promenade se poursuit au <strong>square Louise-Michel</strong> d’où la vue sur le <strong>Sacré-Cœur</strong> offre un décor digne d’une scène de cinéma. Enfin, vous terminez au <strong>Canal Saint-Martin</strong> , endroit emblématique où Amélie aime jouer avec les ricochets et qui apporte une touche finale pleine de douceur à votre parcours."
     },
 
     {
@@ -129,7 +129,7 @@ const cartes = [
             {coords: [48.8611296, 2.3940087], label: "Cimetière du Père Lachaise"},
         ],
         zoom: 16,
-        itineraire: "Votre balade commence sur la <strong>place des Victoires</strong>, parfaite pour entrer dans l’ambiance du film où chaque coin de Paris révèle une histoire. Vous poursuivez ensuite vers le <strong>Marais</strong>, avec ses rues étroites, ses boutiques et son énergie unique qui reflètent la diversité que célèbre le film. La promenade vous entraîne ensuite au <strong>Quartier Latin</strong>, où cafés, librairies et vie étudiante donnent un charme très cinématographique. Puis vous prenez la direction de <strong>Pigalle</strong>, quartier qui offre un aperçu du Paris nocturne si présent dans certaines scènes. Enfin, vous terminez au <strong>cimetière du Père-Lachaise</strong>, lieu paisible et chargé d’émotion, parfait pour conclure ce parcours qui mêle poésie, rencontres et découvertes."
+        itineraire: "Votre balade commence sur la <strong>place des Victoires</strong>,parfaite pour entrer dans l’ambiance du film où chaque coin de Paris révèle une histoire. Vous poursuivez ensuite vers le <strong>Marais</strong>, avec ses rues étroites, ses boutiques et son énergie unique qui refletent de la diversité que célèbre le film. La promenade vous entraîne ensuite au <strong>Quartier Latin</strong>, où cafés, librairies et vie étudiante donnent un charme très cinématographique. Puis vous prenez la direction de <strong>Pigalle</strong>, quartier qui offre un aperçu du Paris nocturne si présent dans certaines scènes. Enfin, vous terminez au <strong>cimetière du Père-Lachaise</strong>, lieu paisible et chargé d’émotion, parfait pour conclure ce parcours qui mêle poésie, rencontres et découvertes."
     },
 
     {
@@ -155,7 +155,7 @@ const cartes = [
             {coords: [48.8737673, 2.2954441], label: "Arc de Triomphe"},
         ],
         zoom: 16,
-        itineraire: "Votre balade commence au <strong>Grand Palais</strong> dont l’immense verrière a servi de décor à l’une des scènes les plus spectaculaires du film. En longeant les rues élégantes du centre de Paris, vous rejoignez l’<strong>Hôtel Soubise</strong>, superbe hôtel particulier dont les façades classiques rappellent le raffinement parisien au cœur de l’action. Vous continuez ensuite vers la <strong>place du Trocadéro</strong>, l’un des points de vue les plus impressionnants sur la <strong>Tour Eiffel</strong>. La promenade vous mène ensuite sur le <strong>quai d’Austerlitz</strong>, lieu emblématique des scènes nocturnes. Vous terminez au pied de l’<strong>Arc de Triomphe</strong>, monument majeur au centre de l’une des scènes d’action les plus mémorables du film."
+        itineraire: "Votre balade commence au <strong>Grand Palais</strong> dont l’immense verrière a servi de décor à l’une des scènes les plus spectaculaires du film. En longeant les rues élégantes du centre de Paris, vous rejoignez l’<strong>Hôtel Soubise</strong>, superbe hôtel particulier dont les façades classiques rappellent le raffinement parisien au cœur de l’action. Vous continuez ensuite vers la <strong>place du Trocadéro</strong>, l’un des points de vue les plus impressionnants sur la <strong>Tour Eiffel</strong> et parfait pour revivre l’intensité des poursuites du film. La promenade vous mène ensuite sur le <strong>quai d’Austerlitz</strong>, lieu emblématique des scènes nocturnes. Vous terminez au pied de l’<strong>Arc de Triomphe</strong>, monument majeur au centre de l’une des scènes d’action les plus mémorables du film et qui offre un final spectaculaire à votre parcours parisien."
     },
 
     {
@@ -182,7 +182,7 @@ const cartes = [
             {coords: [48.866042, 2.3153496], label: "Petit Palais"},
         ],
         zoom: 16,
-        itineraire: "Votre balade commence dans le <strong>Paris médiéval</strong> où les ruelles et les bâtiments anciens rappellent l’élégance intemporelle du film. Vous traversez ensuite le <strong>Pont des Arts</strong>, idéal pour admirer la <strong>Seine</strong>. La promenade se poursuit sur la <strong>Place de la Concorde</strong> avant de découvrir le <strong>Palais Galliera</strong>, musée de la mode. Vous empruntez ensuite l’<strong>Avenue Montaigne</strong>, cœur du luxe parisien. La balade se termine au <strong>Petit Palais</strong>, dont l’architecture raffinée offre un écrin parfait."
+        itineraire: "Votre balade commence dans le charme discret de <strong>Paris Médiéval</strong> où les ruelles et les bâtiments anciens rappellent l’élégance intemporelle du film. Vous traversez ensuite le <strong>Pont des Arts</strong>, idéal pour admirer la <strong>Seine</strong> et ressentir la sophistication parisienne qui traverse chaque scène. La promenade se poursuit sur la <strong>Place de la Concorde</strong>, symbole du prestige et du style avant de découvrir le <strong>Palais Galliera</strong>, musée de la mode qui évoque parfaitement l’univers couture du film. Vous empruntez ensuite l’<strong>Avenue Montaigne</strong>, cœur du luxe parisien où les vitrines des grandes maisons font écho à l’ambition et au glamour des personnages. La balade se termine au <strong>Petit Palais</strong>, dont l’architecture raffinée et les jardins offrent un écrin parfait pour conclure cette immersion dans le Paris chic et élégant du film."
     },
 
     {
@@ -206,7 +206,7 @@ const cartes = [
             {coords: [48.8867054, 2.3415715], label: "Montmartre"},
         ],
         zoom: 16,
-        itineraire: "Votre balade commence au célèbre <strong>Moulin Rouge</strong> où l’ambiance festive du film prend vie. Vous montez ensuite vers <strong>Montmartre</strong>, qui rappelle les scènes romantiques et artistiques du film. La promenade se termine avec un panorama spectaculaire depuis la <strong>Tour Eiffel</strong>."
+        itineraire: "Votre balade commence au célèbre <strong>Moulin Rouge</strong> où l’ambiance festive et colorée du film prend immédiatement vie. Vous montez ensuite vers <strong>Montmartre</strong> qui rappelle les scènes romantiques et artistiques du film. La promenade se termine avec un panorama spectaculaire depuis la <strong>Tour Eiffel</strong> pour clore votre parcours sur une note magique."
     },
 
     {
@@ -232,7 +232,7 @@ const cartes = [
             {coords: [48.8532085, 2.3546873], label: "Quai de Bourbon"},
         ],
         zoom: 16,
-        itineraire: "Votre balade commence au <strong>restaurant Polidor</strong> où l’on retrouve l’atmosphère conviviale du film. Vous poursuivez vers le <strong>cinéma du Panthéon</strong>. La promenade vous entraîne ensuite à la librairie <strong>Shakespeare and Company</strong> avant de grimper sur la <strong>Montagne Sainte-Geneviève</strong>. Vous terminez au <strong>Quai de Bourbon</strong> sur l’<strong>Île Saint-Louis</strong>."
+        itineraire: "Votre balade commence au <strong>restaurant Polidor</strong> où l’on retrouve l’atmosphère conviviale et intemporelle du film. Vous poursuivez vers le <strong>cinéma du Panthéon</strong>, petite salle emblématique qui évoque les soirées parisiennes d’antan. La promenade vous entraîne ensuite à la célèbre librairie <strong>Shakespeare and Company</strong>, lieu magique où le temps semble suspendu avant de grimper sur la <strong>Montagne Sainte-Geneviève</strong> pour profiter d’une vue unique sur la capitale. Vous terminez au <strong>Quai de Bourbon</strong> sur l’<strong>Île Saint-Louis</strong> où le calme et le charme des bords de Seine capturent parfaitement la poésie et la nostalgie de l’histoire."
     },
 
     {
@@ -257,7 +257,7 @@ const cartes = [
             {coords: [48.8657028, 2.2965064], label: "palais galliera"},
         ],
         zoom: 16,
-        itineraire: "Votre balade commence à l’<strong>Université Panthéon-Sorbonne</strong>. Vous poursuivez vers le <strong>Café Debussy (Restaurant Il Russo)</strong>. La promenade vous mène ensuite au <strong>Pont de Bir-Hakeim</strong>. Vous terminez au <strong>Palais Galliera</strong>."
+        itineraire: "Votre balade commence à l’<strong>Université Panthéon-Sorbonne</strong> dont les façades classiques rappellent les scènes intellectuelles et mystérieuses du film. Vous poursuivez vers le <strong>Café Debussy (Restaurant Il Russo)</strong>, petit lieu discret où l’on retrouve l’atmosphère feutrée et intrigante propre à l’intrigue. La promenade vous mène ensuite au <strong>Pont de Bir-Hakeim</strong>, emblématique pour ses perspectives spectaculaires et ses scènes d’action mémorables. Vous terminez au <strong>Palais Galliera</strong> qui offre un contraste apaisant et cloture la balade sur une note sophistiquée à l’image des rêves complexes et labyrinthiques du film."
     },
 
     {
@@ -280,7 +280,7 @@ const cartes = [
             {coords: [48.8348685, 2.3296415], label: "Chez Maurice"},
         ],
         zoom: 16,
-        itineraire: "Votre balade commence au <strong>Bistrot La Renaissance</strong>. Vous continuez ensuite vers <strong>Chez Maurice</strong>. Une petite promenade qui mêle histoire du cinéma et charme des cafés parisiens."
+        itineraire: "Votre balade commence au <strong>Bistrot La Renaissance</strong> un lieu où l’on retrouve l’ambiance intime et tendue du film. Vous continuez ensuite vers <strong>Chez Maurice</strong> célèbre pour son cadre typiquement parisien qui rappelle les rencontres décisives et les dialogues mémorables du film. Une petite promenade qui mêle histoire du cinéma et charme des cafés parisiens."
     },
 
     {
@@ -306,7 +306,7 @@ const cartes = [
             {coords: [48.8626847, 2.2713928], label: "Rue Eugène Labiche"},
         ],
         zoom: 16,
-        itineraire: "Votre balade commence au <strong>Club Bonnie</strong>. Vous continuez vers le <strong>Pont Bir-Hakeim</strong>. Vous explorez ensuite le <strong>métro Porte des Lilas</strong>, puis la <strong>Place Saint-George</strong>. La promenade se termine sur la <strong>Rue Eugène Labiche</strong>."
+        itineraire: "Votre balade commence au <strong>Club Bonnie</strong> où l’ambiance sombre et électrique du film se fait ressentir. Vous continuez vers le <strong>Pont Bir-Hakeim</strong>, emblématique et cinématographique, offrant des perspectives saisissantes sur la Seine. Vous plongez ensuite dans le quotidien parisien en explorant le <strong>métro Porte des Lilas</strong>, avant de longer la <strong>Place Saint-George</strong> et ses environs pittoresques. La promenade se termine sur la <strong>Rue Eugène Labiche</strong>, petite rue typique où l’on retrouve l’atmosphère tendue et intrigante propre à la série."
     },
 
     {
@@ -332,7 +332,7 @@ const cartes = [
             {coords: [48.8689561, 2.3671691], label: "Canal Saint-Martin"},
         ],
         zoom: 16,
-        itineraire: "Votre balade commence sur la <strong>Rue de Seine</strong>. Vous poursuivez vers la <strong>Rue de l’Échaudé</strong> et le <strong>Balto</strong>. Ensuite, vous longez la <strong>Rue de Lancry</strong> avant d’atteindre le <strong>Canal Saint-Martin</strong>."
+        itineraire: "Votre balade commence sur la <strong>Rue de Seine</strong>, où le charme parisien rencontre l’intrigue et le suspense de la série. Vous poursuivez vers la <strong>Rue de l’Échaudé</strong> et le <strong>Balto</strong>, ce sont des cafés et petites rues qui reflètent l’atmosphère mystérieuse des scènes clés. Ensuite, vous longez la <strong>Rue de Lancry</strong> avant d’atteindre le <strong>Canal Saint-Martin</strong> lieu emblématique de la série et offre un cadre parfait pour une promenade à la fois parisienne et palpitante."
     },
 
     {
@@ -358,7 +358,7 @@ const cartes = [
             {coords: [48.8643028, 2.3305559], label: "Rue de Rivoli"},
         ],
         zoom: 16,
-        itineraire: "Votre balade commence au <strong>Louvre</strong>. Vous montez ensuite vers le <strong>Sacré-Cœur</strong> à <strong>Montmartre</strong>. La promenade continue aux <strong>Puces de Saint-Ouen</strong>. Vous traversez le <strong>Jardin du Luxembourg</strong> avant de finir sur la <strong>Rue de Rivoli</strong>."
+        itineraire: "Votre balade commence au <strong>Louvre</strong>, où le mystère du film prend vie parmi les œuvres et l’architecture. Vous montez ensuite vers le <strong>Sacré-Cœur</strong>, au cœur de <strong>Montmartre</strong>, pour profiter des ruelles pittoresques et de la vue sur Paris. La promenade continue aux <strong>Puces de Saint-Ouen</strong> où les marchés et trésors cachés rappellent l’ingéniosité du personnage. Vous traversez ensuite le <strong>Jardin du Luxembourg</strong> avant de finir sur la <strong>Rue de Rivoli</strong> qui clôt cette balade pleine de charme, de style et de suspense à la parisienne."
     },
 
     {
@@ -384,7 +384,7 @@ const cartes = [
             {coords: [48.8584075, 2.3375477], label: "Pont des Arts"},
         ],
         zoom: 16,
-        itineraire: "Votre balade commence au <strong>Musée Baccarat</strong>. Vous continuez vers le <strong>Musée d’Orsay</strong>. La promenade se poursuit au <strong>Café Louis-Philippe</strong>, puis au <strong>Printemps Haussmann</strong>. Vous terminez sur le <strong>Pont des Arts</strong>."
+        itineraire: "Votre balade commence au <strong>Musée Baccarat</strong>, symbole de luxe et d’élégance. Vous continuez vers le <strong>Musée d’Orsay</strong> dont l’architecture et les œuvres emblématiques offrent un décor chic. La promenade se poursuit au <strong>Café Louis-Philippe</strong>, parfait pour une pause gourmande dans un cadre typiquement parisien. Ensuite, vous découvrez les vitrines prestigieuses du <strong>Printemps Haussmann</strong>, avant de terminer sur le <strong>Pont des Arts</strong>, lieu emblématique qui conclut cette balade glamour à la manière de Gossip Girl."
     },
 
     {
@@ -410,7 +410,7 @@ const cartes = [
             {coords: [48.8648492, 2.3384224], label: "Galerie de Valois"},
         ],
         zoom: 16,
-        itineraire: "Votre balade commence devant l’<strong>Agence ASK</strong>. Vous poursuivez vers le <strong>Grand Rex</strong>. La promenade continue à la <strong>Brasserie du Louvre</strong>. Vous traversez la <strong>Place de la Concorde</strong> avant de terminer dans la <strong>Galerie de Valois</strong>."
+        itineraire: "Votre balade commence devant l’<strong>Agence ASK</strong> au plein cœur de l’action où s’entrelacent carrières et intrigues des agents. Vous poursuivez vers le mythique <strong>Grand Rex</strong>, cinéma emblématique qui rappelle le glamour du milieu du cinéma. La promenade continue à la <strong>Brasserie du Louvre</strong>, lieu où se mêlent rencontres et discussions stratégiques. Vous traversez ensuite la <strong>Place de la Concorde</strong> avant de terminer dans la <strong>Galerie de Valois</strong>, parfaite pour clore cette balade au cœur de l’univers feutré et captivant de la série."
     },
 
     {
@@ -432,7 +432,7 @@ const cartes = [
             {coords: [48.8603823, 2.360742], label: "Le Marais"},
         ],
         zoom: 16,
-        itineraire: "Votre balade commence et se déroule dans le <strong>Marais</strong>, quartier emblématique de Paris et cadre central de la série."
+        itineraire: "Votre balade commence et se déroule dans le <strong>Marais</strong>. C’est un quartier emblématique de Paris où chaque coin de rue rappelle l’énergie et l’humour de la série basée entre tradition et modernité. C’est un cadre parfait pour découvrir Paris tout en suivant les traces des personnages. Une promenade conviviale et pleine de vie, typique de l’esprit de la série."
     },
 
     {
@@ -459,7 +459,7 @@ const cartes = [
             {coords: [48.8530896, 2.3533138], label: "La Brasserie de l'Isle Saint-Louis"},
         ],
         zoom: 16,
-        itineraire: "Votre balade commence à l’<strong>Hôtel Crowne Plaza</strong>. Vous continuez vers le <strong>Quartier du Temple</strong> puis le <strong>Marais</strong>. Une pause s’impose au <strong>Bistrot Chez Julien</strong> avant de terminer à la <strong>Brasserie de l’Île Saint-Louis</strong>."
+        itineraire: "Votre balade commence à l’<strong>Hôtel Crowne Plaza</strong> où débute l’esprit familial et dynamique de la série. Vous continuez vers le <strong>Quartier du Temple</strong> avec ses rues animées et son charme parisien typique avant de vous immerger dans le <strong>Marais</strong>. Une pause s’impose au <strong>Bistrot Chez Julien</strong> pour savourer l’ambiance conviviale et chaleureuse avant de terminer au <strong>Brasserie de l’Île Saint-Louis</strong> qui offre une vue charmante sur la Seine et conclut cette promenade à la fois vivante et pleine de charme fidèle à l’esprit de Modern Family."
     },
 
     {
@@ -486,7 +486,7 @@ const cartes = [
             {coords: [48.851774, 2.3500794], label: "Pont de Montebello"},
         ],
         zoom: 16,
-        itineraire: "Votre balade commence sur les <strong>Champs-Élysées</strong>. Vous poursuivez vers l’<strong>Hôtel d’Espeyran</strong>, puis le <strong>métro Franklin D. Roosevelt</strong> et la <strong>Rue de Rivoli</strong>. Vous terminez sur le <strong>Pont de Montebello</strong>."
+        itineraire: "Votre balade commence sur les <strong>Champs-Élysées</strong>, parfait pour entrer dans l’univers sophistiqué de la série. Vous poursuivez vers l’<strong>Hôtel d’Espeyran</strong> qui reflète le style et le prestige chers aux personnages. La promenade continue au <strong>métro Franklin D. Roosevelt</strong>, puis le long de la <strong>Rue de Rivoli</strong> où Paris révèle son charme classique et animé. Vous terminez sur le <strong>Pont de Montebello</strong> qui offre une vue emblématique sur la Seine et Notre-Dame pour clôturer sur une atmosphère dramatique digne de Dynasty."
     },
 
     {
@@ -513,7 +513,7 @@ const cartes = [
             {coords: [48.8868058, 2.3430153], label: "Basilique du Sacré-Coeur"},
         ],
         zoom: 16,
-        itineraire: "Votre balade commence aux <strong>Deux Magots</strong>. Vous poursuivez vers le <strong>Pont des Arts</strong>, puis la <strong>Place du Tertre</strong>. Vous déambulez dans la <strong>Rue de l’Abreuvoir</strong> avant de terminer à la <strong>Basilique du Sacré-Cœur</strong>."
+        itineraire: "Votre balade commence aux <strong>Deux Magots</strong>, célèbre café parisien et lieu emblématique de la série. Vous poursuivez vers le <strong>Pont des Arts</strong> offrant une vue romantique sur la Seine et rappelant les moments de réflexion des personnages. Ensuite, vous explorez la <strong>Place du Tertre</strong>, cœur artistique de Montmartre avant de déambuler dans la charmante <strong>Rue de l’Abreuvoir</strong> avec ses maisons pittoresques et son ambiance de village. La promenade se termine à la <strong>Basilique du Sacré-Cœur</strong>, où la vue panoramique sur Paris offre un super final."
     },
 ];
 //Parcours le tableau de cartes pour trouver l'id de la carte
@@ -626,6 +626,7 @@ if (carte) { // Verifie si l'objet carte existe.
     //Le texte s'affiche.
     container.innerHTML = "<p>Carte non trouvée.</p>";
 }
+
 
 
 
