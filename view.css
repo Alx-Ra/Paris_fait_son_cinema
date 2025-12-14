@@ -1,4 +1,4 @@
-/* ==== Global Reset ==== */
+/*On réinitialise les marges et paddings et on définit le box-sizing pour éviter les débordements*/
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,13 +7,14 @@
 
 html, body {
     height: 100%;
-    overflow-x: hidden;
+    overflow-x: hidden; /*Empêche le scroll horizontal*/
     font-family: sans-serif;
     color: white;
     background: radial-gradient(circle, rgba(46,46,46,1) 0%, rgba(0,0,0,1) 100%);
 }
 
-/* ==== Navbar ==== */
+/*Navbar
+La barre de navigation est sticky, avec un flex pour l'alignement*/
 .navbar {
     background-color: #000;
     padding: 20px;
@@ -26,6 +27,7 @@ html, body {
     z-index: 100;
 }
 
+/*Titre dans la navbar*/
 .navbar h1 {
     color: #D1A54D;
     text-transform: uppercase;
@@ -33,6 +35,7 @@ html, body {
     font-size: 2rem;
 }
 
+/*lien de la navbar*/
 .navbar a {
     display: flex;
     align-items: center;
@@ -43,7 +46,8 @@ html, body {
     width: 70px;
 }
 
-/* ==== Hero Section ==== */
+/*Hero Section
+Section pour les images en fond, avec un overlay sombre et un texte centré*/
 .hero {
     width: 100%;
     height: 100vh;
@@ -55,6 +59,7 @@ html, body {
     justify-content: center;
 }
 
+/*élément sous l'image hero pour créer la vague arrondie*/
 .hero::after {
     content: '';
     position: absolute;
@@ -66,12 +71,14 @@ html, body {
     clip-path: ellipse(130% 80% at 50% 100%);
 }
 
+/*couche sombre et presque transparente*/
 .hero-overlay {
     position: absolute;
     inset: 0;
     background: rgba(0,0,0,0.5);
 }
 
+/*Contenu par dessus le overlay*/
 .hero-content {
     position: relative;
     z-index: 2;
@@ -92,7 +99,8 @@ html, body {
     opacity: 0.95;
 }
 
-/* ==== Page Content ==== */
+/*Page Content
+conteneur pour tout le contenu de la page, centré et limité en en largeur*/
 .page-content {
     display: flex;
     flex-direction: column;
@@ -102,7 +110,10 @@ html, body {
     margin: 0 auto;
 }
 
-/* ==== Film Infos ==== */
+/*Film Infos
+Conteneur pour l'affiche et les informations du film,
+flex pour deckstop
+wrap pour le responsive*/
 .img-infos {
     display: flex;
     flex-wrap: wrap;
@@ -119,6 +130,7 @@ html, body {
     box-shadow: 0 0 10px rgba(255,255,255,0.2);
 }
 
+/*Colonne avec le texte, résumé, réalisateur et acteurs*/
 .infos-droite {
     flex: 1;
     display: flex;
@@ -132,6 +144,7 @@ html, body {
     line-height: 1.5;
 }
 
+/*Sections réalisateurs et acteurs avec un fond plus clair et une bordure*/
 #real, #act {
     background: rgba(255,255,255,0.02);
     padding: 15px;
@@ -164,7 +177,8 @@ html, body {
     margin-right: 8px;
 }
 
-/* ==== Map + Itinéraire ==== */
+/*Map + Itinéraire
+conteneur flex pour la map et itinéraire et wrap pour le responsive*/
 .map-itineraire {
     display: flex;
     gap: 30px;
@@ -182,6 +196,7 @@ html, body {
     align-items: center;
 }
 
+/*Taille de la map*/
 #map {
     width: 100%;
     height: 300px;
@@ -193,6 +208,7 @@ html, body {
     min-width: 250px;
 }
 
+/*Boîte pour chaque itinéraire*/
 .itineraire-box {
     background: linear-gradient(135deg, rgba(209,165,77,0.1) 0%, rgba(209,165,77,0.05) 100%);
     padding: 30px;
@@ -215,6 +231,7 @@ html, body {
     font-size: 1.5rem;
 }
 
+ /* Badge pour la durée */
 .duration-badge {
     background: #D1A54D;
     color: #000;
@@ -235,6 +252,7 @@ html, body {
     font-weight: 600;
 }
 
+/* Liste des lieux cliquables */
 .lieux-cliquables {
     background: rgba(255,255,255,0.03);
     padding: 20px;
@@ -243,12 +261,14 @@ html, body {
     margin-bottom: 20px;
 }
 
+/* Titre de la section des lieux cliquables */
 .lieux-cliquables h3 {
     color: #D1A54D;
     font-size: 1.3rem;
     margin-bottom: 10px;
 }
 
+/* Liste des lieux */
 .lieux-cliquables ul {
     list-style: none;
     padding: 0;
@@ -257,6 +277,7 @@ html, body {
     gap: 10px;
 }
 
+/* Chaque élément de lieu */
 .lieux-cliquables li {
     padding: 10px 15px;
     background: rgba(255,255,255,0.05);
@@ -266,6 +287,7 @@ html, body {
     transition: all 0.3s ease;
 }
 
+/* Effet au survol */
 .lieux-cliquables li:hover {
     background: rgba(209,165,77,0.15);
     border-left-color: #D1A54D;
@@ -273,7 +295,9 @@ html, body {
     color: #D1A54D;
 }
 
-/* ==== Films Proximité ==== */
+/*Films Proximité
+Section grid pour afficher les films similaires ou proches
+Conteneur principal de la section*/
 .films-proximite-section {
     width: 100%;
     max-width: 1200px;
@@ -281,6 +305,7 @@ html, body {
     padding: 0 20px;
 }
 
+/* Titre de la section */
 .section-title {
     color: #D1A54D;
     font-size: 2rem;
@@ -290,12 +315,14 @@ html, body {
     padding-bottom: 15px;
 }
 
+/* Grille pour les cartes de films */
 .films-proximite-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
 }
 
+/* Carte individuelle de film */
 .film-proximite-card {
     background: rgba(255,255,255,0.05);
     border-radius: 12px;
@@ -306,12 +333,14 @@ html, body {
     transition: all 0.3s ease;
 }
 
+/* Effet au survol de la carte */
 .film-proximite-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 10px 30px rgba(209,165,77,0.3);
     background: rgba(255,255,255,0.08);
 }
 
+/* Image à l'intérieur de la carte */
 .film-proximite-card img {
     width: 100%;
     height: 350px;
@@ -319,27 +348,32 @@ html, body {
     transition: transform 0.3s ease;
 }
 
+/* Effet au survol sur l'image */
 .film-proximite-card:hover img {
     transform: scale(1.05);
 }
 
+/* Informations textuelles du film */
 .film-proximite-info {
     padding: 20px;
 }
 
+/* Titre du film */
 .film-proximite-info h4 {
     color: #D1A54D;
     margin: 0 0 10px 0;
     font-size: 1.2rem;
 }
 
+/* Description ou résumé du film */
 .film-proximite-info p {
     font-size: 0.9rem;
     color: rgba(255,255,255,0.7);
     margin: 0;
 }
 
-/* ==== Footer ==== */
+/*Footer
+pied de page, centré avec texte et liens dorés*/
 footer {
     background-color: #000;
     padding: 50px 20px;
@@ -365,7 +399,8 @@ footer a {
     padding-right: 20px;
 }
 
-/* ==== Responsive Media Queries ==== */
+/*Responsive Media Queries
+Ajustement pour le responsive sur téléphone et tablette*/
 @media (max-width: 1024px) {
     .img-infos {
         flex-direction: column;
