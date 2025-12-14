@@ -24,7 +24,7 @@ const cartes = [
             {coords: [48.8570226, 2.352859], label: "Hôtel de ville"},
         ],
         zoom: 16,
-         // NOUVEAU : itinéraire détaillé pour la balade
+         // itinéraire pour la balade
         itineraire: "Votre balade commence sur <strong>les quais de Seine</strong> : dans un décor central du film mais surtout l'un des plus beaux points de vue de Paris. En longeant le fleuve, vous profitez des ponts, des péniches et de cette ambiance typiquement parisienne qui contraste avec la tension du film. Vous quittez ensuite les quais pour rejoindre <strong>les catacombes de Paris</strong>, lieu de tournage incontournable où le mystère du film rencontre l'un des sites les plus fascinants de la capitale. Après cette parenthèse souterraine, vous remontez vers la lumière pour terminer devant le majestueux <strong>Hôtel de Ville</strong>, un bâtiment emblématique et véritable scène à ciel ouvert. Une fin de parcours parfaite pour admirer l'architecture parisienne tout en retrouvant l'ambiance du film."
     },
 
@@ -51,6 +51,8 @@ const cartes = [
             {coords: [48.8588, 2.2505], label: "Bois de Boulogne"},
         ],
         zoom: 16,
+        itineraire: "Votre balade débute devant <strong>le musée du Louvre</strong>, lieu emblématique du film et véritable incontournable parisien. En passant devant la pyramide et les façades du palais, vous retrouvez l’atmosphère mystérieuse qui ouvre l’intrigue. Vous continuez ensuite vers l’imposante <strong>église Saint-Sulpice</strong> dont l’architecture grandiose et le célèbre gnomon rappellent certaines des scènes les plus marquantes du récit. La promenade vous mène ensuite jusqu’à <strong>la place Vendôme</strong> où se dresse le prestigieux <strong>Hôtel Ritz</strong>, symbole d’élégance et décor clé du film. Enfin pour conclure votre parcours, vous rejoignez <strong>le bois de Boulogne</strong> qui offre une pause hors du tumulte parisien tout en constituant l’un des décors de l’enquête. Une balade qui mêle de grands monuments, des secrets d’histoire et une ambiance mystique digne du film.
+
     },
 
     {
@@ -607,6 +609,7 @@ if (carte) { // Verifie si l'objet carte existe.
     //Le texte s'affiche.
     container.innerHTML = "<p>Carte non trouvée.</p>";
 }
+
 
 
 
