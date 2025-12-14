@@ -7,7 +7,7 @@ const cartes = [
     {
         id: "1",
         titre: "Sous la Seine",
-        image: "images/Sous_la_Seine.jpg",
+        image: "images/sous-la-seine.jpg",
         video: "https://www.tf1info.fr/player/897939d3-a9b3-4f6d-9673-c3f2333982c9/?autoplay=1&mute=1",
         heroImage: "https://i.headtopics.com/images/2024/8/28/bfmtv/sous-la-seine-depasse-les-100-millions-de-vues-et--sous-la-seine-depasse-les-100-millions-de-vues-et--B84BEB6CFCA0BE5055D59178A0BC2B5C.webp",
         herosubtitle: "En plein été, Paris est menacé par un mystérieux danger venu des profondeurs.Entre suspense et action, une course contre la montre s'engage pour sauver la ville.",
@@ -30,8 +30,8 @@ const cartes = [
 
      {
         id: "2",
-        titre: "DaVinci Code",
-        image: "images/DaVinci_code.jpg",
+        titre: "daVinci Code",
+        image: "images/davinci-code.jpg",
         video: "",
         heroImage: "https://tse3.mm.bing.net/th/id/OIP.cCVpKT-uRSBjTccM4c81gAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3",
         herosubtitle: "Véritable plongée dans un labyrinthe de mystères, Da Vinci Code entraîne le spectateur dans une enquête haletante où l’histoire, l’art et les secrets cachés de l’humanité s’entremêlent dangereusement.",
@@ -57,7 +57,7 @@ const cartes = [
     {
         id: "3",
         titre: "Emily in Paris",
-        image: "images/Emily_in_Paris.jpg",
+        image: "images/emily-in-paris.jpg",
         heroImage: "https://images.lifestyleasia.com/wp-content/uploads/sites/7/2024/09/13133309/emily-in-paris-s4-1.jpg",
         herosubtitle: "Entre glamour, romance et chocs culturels, Emily in Paris suit les aventures pétillantes d’une jeune Américaine propulsée dans la capitale française, où chaque jour devient un mélange de défis professionnels et de découvertes enchantées.",
         texte: "Emily Jane Cooper, une Américaine de Chicago, déménage à Paris, en France, suite à une promotion dans sa «boîte». En effet, la société de marketing où elle travaille vient d'acquérir Savoir, une société du même domaine basée en France, à laquelle l'agence d'Emily souhaite apporter une touche américaine.",
@@ -82,7 +82,7 @@ const cartes = [
     {
         id: "4",
         titre: "Le fabuleux destin d'Amélie Poulain",
-        image: "images/Amelie_Poulain.jpg",
+        image: "images/ameliepoulain.jpg",
         video: "https://www.tf1info.fr/player/f067f2ae-0461-442a-8fd3-c5aa9af11c82/",
         heroImage: "https://wallpaperaccess.com/full/4062537.jpg",
         herosubtitle: "Amélie Poulain raconte l’histoire tendre et poétique d’une jeune femme qui transforme le quotidien en magie, un petit geste à la fois.",
@@ -109,7 +109,7 @@ const cartes = [
     {
         id: "5",
         titre: "Paris, je t'aime",
-        image: "images/Paris_je_taime.jpg",
+        image: "images/paris-je-taime.jpg",
         heroImage: "https://image.tmdb.org/t/p/original/ekCfR5ap8guLLmV9hMR9LCwPFoT.jpg",
         herosubtitle: "Paris, je t’aime est un voyage sensible à travers la capitale, où chaque quartier révèle une histoire d’amour unique et inattendue.",
         texte: "Dix-huit histoires sur le thème de l'amour se déroulant dans des arrondissements parisiens: un célibataire vient en aide à une femme qui s'est évanouie sur la rue; un touriste américain regrette d'avoir fait de l'oeil à une fille dans le métro; une immigrée brésilienne dépose son bébé à la crèche afin d'aller s'occuper de celui d'une famille bourgeoise.",
@@ -135,7 +135,7 @@ const cartes = [
     {
         id: "6",
         titre: "Mission Impossible : Fallout",
-        image: "images/mission_impossible.jpg",
+        image: "images/mission-impossible.jpg",
         heroImage: "https://th.bing.com/th/id/R.623370820ddf74e7bc2db07d6138d492?rik=7gaMUmo2j7J4oA&riu=http%3a%2f%2fwww.baltana.com%2ffiles%2fwallpapers-10%2fMission-Impossible-Fallout-HD-Desktop-Wallpaper-29486.jpg&ehk=Jpk225%2bwUtfSX%2fwlFM8lh4UIMzxa1VfwPAa1q3%2fffAg%3d&risl=&pid=ImgRaw&r=0",
         herosubtitle: "Dans Mission: Impossible – Fallout, Ethan Hunt affronte sa mission la plus explosive et dangereuse.",
         texte: "Ethan Hunt et l'équipe du FMI se joignent à August Walker, l'assassin de la CIA, pour éviter une catastrophe d'une ampleur extrême. Le marchand d'armes John Lark et un groupe de terroristes connus prévoient utiliser trois noyaux de plutonium pour une attaque nucléaire simultanée sur le Vatican, Jérusalem et La Mecque. Quand les armes disparaissent, Ethan et son équipe se retrouvent dans une course désespérée contre la montre pour les empêcher de tomber entre de mauvaises mains.",
@@ -161,7 +161,7 @@ const cartes = [
     {
         id: "7",
         titre: "Le diable s'habille en Prada",
-        image: "images/Diable_habille_en_prada.jpg",
+        image: "images/diable-habille-en-prada.jpg",
         heroImage: "https://media.ngroup.be/IMAGE/IMAGE-S1-00031/297554-le-diable-s-habille-en-prada.jpg",
         herosubtitle: "Le Diable s’habille en Prada propulse une débutante au cœur du monde de la mode, où l’ambition se paie au prix fort.",
         texte: "Son diplôme de journalisme en poche, Andrea débarque à New York où elle décroche un premier emploi en tant qu'assistante de la rédactrice en chef d'un prestigieux magazine de mode. Un job de rêve. En apparence seulement car sa boss est en réalité un monstre tyrannique et caractériel ; Andrea, qui envisage son nouveau travail comme un tremplin vers une illustre carrière de journaliste, décide d'endurer les sévices de sa diablesse de patronne.",
@@ -188,7 +188,7 @@ const cartes = [
     {
         id: "8",
         titre: "Moulin Rouge",
-        image: "images/Moulin_Rouge.jpg",
+        image: "images/moulin-rouge.jpg",
         heroImage: "https://medias.moulinrouge.fr/app/uploads/2022/02/2010-moulin-rouge-at-night-scaled.jpg",
         herosubtitle: "Dans Moulin Rouge, un jeune artiste se retrouve emporté dans un tourbillon de passion et de lumière, où l’amour devient le numéro le plus périlleux de tous.",
         texte: "A la fin du XIXe siècle, dans le Paris de la Belle Epoque, Christian, un jeune poète désargenté, s'installe dans le quartier de Montmartre et découvre un univers où se mêlent sexe, drogue et french cancan, mais se rebelle contre ce milieu décadent en menant une vie de bohème. Il rêve d'écrire une grande pièce, et le peintre Henri de Toulouse-Lautrec est prêt à lui donner sa chance.",
@@ -212,7 +212,7 @@ const cartes = [
     {
         id: "9",
         titre: "Minuit à Paris",
-        image: "images/Minuit_a_Paris.jpg",
+        image: "images/minuit-a-paris.jpg",
         heroImage: "https://img.lemde.fr/2011/04/14/0/0/5616/3744/1440/960/60/0/ill_1507466_5f26_minuit-paris-allen.jpg",
         herosubtitle: "Dans Minuit à Paris, un rêveur en quête d’inspiration plonge chaque nuit dans un Paris secret, où les époques s’entrelacent pour réveiller ses plus grands désirs.",
         texte: "Gil Pender est un scénariste et romancier. Séjournant à Paris avec sa fiancée, Gil décide de visiter la ville seule. Une nuit, Gil rencontre un groupe de fêtards qui l'entraînent dans le passé pendant une nuit et lui font connaître les icônes de l'art et de la littérature. Plus Gil passe du temps avec ces héros culturels du passé, plus il est insatisfait du présent.",
@@ -238,7 +238,7 @@ const cartes = [
     {
         id: "10",
         titre: "Inception",
-        image: "images/Inception.jpg",
+        image: "images/inception.jpg",
         heroImage: "https://www.odyssee-carriere.com/wp-content/uploads/2019/11/incpetion-3.jpg",
         herosubtitle: "Un maître voleur des rêves s’enfonce dans des labyrinthes mentaux vertigineux, où chaque idée volée peut tout faire basculer.",
         texte: "Dom Cobb est un voleur expérimenté dans l'art périlleux de l'extraction : sa spécialité consiste à s'approprier les secrets les plus précieux d'un individu, enfouis au plus profond de son subconscient, pendant qu'il rêve et que son esprit est particulièrement vulnérable. Très recherché pour ses talents dans l'univers trouble de l'espionnage industriel, Cobb est aussi devenu un fugitif traqué dans le monde entier. Cependant, une ultime mission pourrait lui permettre de retrouver sa vie d'avant.",
@@ -263,7 +263,7 @@ const cartes = [
     {
         id: "11",
         titre: "Inglorious Basterds",
-        image: "images/Inglorious_Basterds.jpg",
+        image: "images/inglorious-basterds.jpg",
         heroImage: "https://img.lemde.fr/2009/05/11/0/0/600/400/1440/960/60/0/ill_1191648_cannes-basterds.jpg",
         herosubtitle: "Une équipe de soldats déterminés mène une guerre de l’ombre audacieuse, où chaque opération rapproche un peu plus d’un destin explosif pour le régime nazi.",
         texte: "Dans la France occupée de 1940, Shosanna Dreyfus assiste à l'exécution de sa famille tombée entre les mains du colonel nazi Hans Landa. Shosanna s'échappe de justesse et s'enfuit à Paris où elle se construit une nouvelle identité en devenant exploitante d'une salle de cinéma. Quelque part ailleurs en Europe, le lieutenant Aldo Raine forme un groupe de soldats juifs américains pour mener des actions punitives particulièrement sanglantes contre les nazis.",
@@ -286,7 +286,7 @@ const cartes = [
     {
         id: "12",
         titre: "fear the Walking Dead",
-        image: "images/Fear_the_walkingdead.jpg",
+        image: "images/fear-the-walkingdead.jpg",
         heroImage: "https://gonzomusic.fr/files/fear-walking-dead-season-2-images-details.jpg",
         herosubtitle: "Sur une terre ravagée par l’effondrement, des survivants en quête d’espoir affrontent des choix impossibles où chaque pas peut être le dernier.",
         texte: "Fear The Walking Dead est un drame osé qui s’intéresse au début de l’apocalypse zombie au travers d’une famille brisée. Se passant dans une ville où l’on vient pour fuir, pour cacher des secrets et pour enterrer son passé, une mystérieuse épidémie menace le peu de stabilité que Madison Clark, une conseillère dans un lycée, et Travis Manawa, un professeur d’anglais, ont réussi à instaurer. ",
@@ -312,7 +312,7 @@ const cartes = [
     {
         id: "13",
         titre: "Killing Eve",
-        image: "images/Killing_eve.jpg",
+        image: "images/killing-eve.jpg",
         heroImage: "https://thumb.canalplus.pro/http/unsafe/1440x810/filters:quality(80)/img-hapi.canalplus.pro:80/ServiceImage/ImageID/104555985",
         herosubtitle: "Une agente brillante et une tueuse insaisissable s’engagent dans un jeu dangereux où l’obsession devient aussi captivante que mortelle.",
         texte: "Eve Polastri est une agent du MI-5 chargée d'enquêter et d'arrêter la terrible et talentueuse Villanelle, une tueuse psychopathe. Mais les deux femmes vont commencer à être obsédées l'une par l'autre. Commence alors un sombre jeu du chat et de la souris.",
@@ -364,7 +364,7 @@ const cartes = [
     {
         id: "15",
         titre: "Gossip Girl",
-        image: "images/Gossip_girl.jpg",
+        image: "images/gossip-girl.jpg",
         heroImage: "https://media.gqmagazine.fr/photos/611b70d5fc0bc6c36d332639/16:9/w_2560%2Cc_limit/1783359.jpg-r_1920_1080-f_jpg-q_x-xxyxx.jpg",
         herosubtitle: "Dans un monde où luxe et secrets règnent en maître, chaque rumeur peut tout faire basculer pour l’élite de Manhattan.",
         texte: "La vie de la jeunesse dorée des élèves de deux écoles privées new-yorkaises, vue à travers les yeux ironiques d'une mystérieuse bloggeuse surnommée Gossip Girl. Entre amour et amitié, chacun tente de tirer son épingle du jeu, mais rien n'est jamais simple derrière des apparences parfaites",
