@@ -1,4 +1,5 @@
-/* changement de la couleur du fond sur toutes les pages*/
+/* changement de la couleur du fond avec un dégradé et supprssion de scroll horizontal
+et les marges par défaut*/
 body {
     background: #2e2e2e;
     background: radial-gradient(circle,rgba(46, 46, 46, 1) 0%, rgba(0, 0, 0, 1) 100%);
@@ -7,19 +8,21 @@ body {
     overflow-x: hidden;
 }
 
+/* Style des titres h2 */
 h2 {
     color: #D1A54D;
     margin-left: 20px;
 }
 
 /*mise en page de la navbar*/
+/* Barre de navigation principale */
 .navbar {
     background-color: #000000;
     padding: 20px 10px; 
     border-bottom: 1px solid rgba(255,255,255,0.1);
-    position: sticky;
+    position: sticky; /* Navbar collée en haut lors du scroll */
     top: 0;
-    display: flex;
+    display: flex; /* Organisation horizontale */
     justify-content: space-between;
     align-items: center;
     padding-left: 20px;
@@ -27,12 +30,14 @@ h2 {
     z-index: 100;
 }
 
+/* Conteneur du logo + nom du site */
 .navbar #name {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
+/* Titre du site */
 .navbar h1 {
     color: #D1A54D;
     margin: 0;
@@ -40,6 +45,7 @@ h2 {
     text-shadow: 0 0 10px rgba(241,196,15,0.4);
 }
 
+/* Liens de navigation */
 .navbar a {
     color: #D1A54D;
     padding: 10px;
@@ -73,6 +79,7 @@ h2 {
 }
 
 /* Boutons de navigation */
+/* Style commun des flèches */
 .scroll-btn {
     position: absolute;
     top: 50%;
@@ -92,11 +99,13 @@ h2 {
     transition: all 0.3s ease;
 }
 
+/* Effet hover des flèches */
 .scroll-btn:hover {
     background-color: rgba(209, 165, 77, 0.2);
     box-shadow: 0 0 15px rgba(209, 165, 77, 0.5);
 }
 
+/* Positionnement des flèches */
 .scroll-btn.left {
     left: 10px;
 }
@@ -105,6 +114,7 @@ h2 {
     right: 10px;
 }
 
+/* Flèche désactivée */
 .scroll-btn:disabled {
     opacity: 0.3;
     cursor: not-allowed;
@@ -114,9 +124,9 @@ h2 {
 .card img {
     width: 70%;
     height: 90%;
-  display: block;
-  margin: 0 auto;
-  border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
 }
 
 
@@ -127,15 +137,17 @@ h2 {
     height: 250px;
     padding: 20px;
     border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation au hover */
 }
 
+/* Effet au survol de la carte */
 .card :hover {
     transform: scale(1.05);
     box-shadow: 0 0 15px rgba(300,200,20,0.3);
     cursor: url("https://github.com/Alx-Ra/Paris_fait_son_cinema/blob/master/images/curseur.png") 16 16, pointer;
 }
 
+/* Conteneur des cartes du glossaire */
 .card-container-glossaire {
     display: flex;
     justify-content: flex-start;
@@ -143,6 +155,7 @@ h2 {
     justify-content: center;
 }
 
+/* Carte de définition */
 .card-glossaire {
     overflow: hidden;
     height: 120px;
@@ -155,6 +168,7 @@ h2 {
     margin-bottom: 20px;
 }
 
+/* Titre du glossaire */
 .card-glossaire h2 {
     color: #D1A54D;
     font-size: 16px;
@@ -162,6 +176,7 @@ h2 {
     margin: 0;
 }
 
+/* Texte du glossaire */
 .card-glossaire p {
     color: #D1A54D;
     font-size: 12px;
@@ -171,11 +186,13 @@ h2 {
     margin-top: 8px;
 }
 
+/* Padding interne des cartes glossaire */
 .card-glossaire .card-glossaire-infos {
   padding: 16px;
 }
 
-
+/*footer
+container du footer*/
 footer{
     background-color: #000000;
     padding: 50px 30px; 
@@ -189,12 +206,14 @@ footer{
     text-shadow: 0 0 10px rgba(241,196,15,0.4);
 }
 
+/* Icônes dans le footer */
 footer img {
     max-width: 1em;
     max-height:1em;
     margin-left: .2em;
 }
 
+/* Liens du footer */
 footer a {
     color: #D1A54D;
     text-shadow: 0 0 10px rgba(241,196,15,0.4);
@@ -202,6 +221,7 @@ footer a {
     text-decoration: none;
 }
 
+/* Texte du footer */
 footer p {
     max-width: 300px;
     line-height: 1.4;
