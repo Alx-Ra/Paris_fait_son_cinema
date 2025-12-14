@@ -168,6 +168,10 @@ h2 {
     margin-bottom: 20px;
 }
 
+.card-container-glossaire a {
+    text-decoration: none;
+}
+
 /* Titre du glossaire */
 .card-glossaire h2 {
     color: #D1A54D;

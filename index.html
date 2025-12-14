@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--Métadonnées techniques-->
+     <!-- Définit l'encodage des caractères -->
     <meta charset="UTF-8">
+    <!-- Métadonnée responsive
+    adapte l'affichage aux écrans mobiles et tablettes -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Feuille de style principale du site -->
     <link rel="stylesheet" href="style.css">
+    <!-- Icône du site affichée dans l’onglet du navigateur -->
     <link rel="icon" type="image/jpeg" href="images/logo.jpg">
+    <!-- MÉTADONNÉES SEO (référencement et moteurs de recherche) -->
     <!-- Primary Meta Tags -->
 <title>Paris fait son cinéma</title>
 <meta name="title" content="Paris fait son cinéma" >
@@ -31,12 +38,13 @@ Parcourez la ville, suivez nos itinéraires et laissez-vous guider sur les trace
 </head>
 <body>
 
-    <!--Ajout navbar-->
+    <!-- Barre de navigation principale -->
     <nav class="navbar">
         <div id="name">
             <img id="logo" src="images/logo.jpg" alt="logo">
             <h1>Paris fait son cinéma</h1>
         </div>
+        <!-- Menu de navigation -->
         <div id="sommaire">
             <a href="#list-film">Films</a>
             <a href="#list-serie">Series</a>
@@ -47,9 +55,13 @@ Parcourez la ville, suivez nos itinéraires et laissez-vous guider sur les trace
 
     <!--création des cartes de film, avec un id différend pour chaque film-->
     <h2 id="list-film">FILMS</h2>
+    <!-- Conteneur du carrousel -->
 <div class="carousel-wrapper">
+    <!-- Bouton de défilement vers la gauche -->
     <button class="scroll-btn left" onclick="scrollCards('films')">‹</button>
+     <!-- Liste des cartes films -->
     <div class="card-container" id="films">
+        <!-- Chaque carte est un lien vers la page détail du film -->
         <a href="view.html?id=1" style="text-decoration: none; color: black;">
             <div class="card">
                 <img src="images/sous-la-seine.jpg" alt="sous la Seine">
@@ -106,11 +118,14 @@ Parcourez la ville, suivez nos itinéraires et laissez-vous guider sur les trace
         </a>
 
     </div>
+    <!-- Bouton de défilement vers la droite -->
     <button class="scroll-btn right" onclick="scrollCards('films')">›</button>
 </div>
 
     <h2 id="list-serie">SERIES</h2>
+    <!-- Carrousel des séries -->
 <div class="carousel-wrapper">
+    <!-- Même logique que les films -->
     <button class="scroll-btn left" onclick="scrollCards('series')">‹</button>
     <div class="card-container" id="series">
         <a href="view.html?id=3" style="text-decoration: none; color: black;">
@@ -214,9 +229,13 @@ Parcourez la ville, suivez nos itinéraires et laissez-vous guider sur les trace
     setupCarousel('series');
 </script>
 
+<!--Glossaire-->
 <h2>Glossaire</h2>
+<!-- Liste des cartes de définitions -->
 <div id ="glossaire" class="card-container-glossaire">
-    <a href="view.html?id=1" style="text-decoration: none;">
+    <!-- Chaque carte correspond à un terme lié à un film -->
+    <!-- Même structure répétée -->
+    <a href="view.html?id=1">
         <div class="card-glossaire">
             <div class="card-glossaire-infos">
                 <h2>Triathlon</h2>
@@ -225,7 +244,7 @@ Parcourez la ville, suivez nos itinéraires et laissez-vous guider sur les trace
         </div>
     </a>
 
-    <a href="view.html?id=2" style="text-decoration: none;">
+    <a href="view.html?id=2">
         <div class="card-glossaire">
             <div class="card-glossaire-infos">
                 <h2>Cryptologue</h2>
@@ -234,7 +253,7 @@ Parcourez la ville, suivez nos itinéraires et laissez-vous guider sur les trace
         </div>
     </a>
 
-    <a href="view.html?id=4" style="text-decoration: none;">
+    <a href="view.html?id=4">
         <div class="card-glossaire">
             <div class="card-glossaire-infos">
                 <h2>Incognito</h2>
@@ -243,7 +262,7 @@ Parcourez la ville, suivez nos itinéraires et laissez-vous guider sur les trace
         </div>
     </a>
 
-    <a href="view.html?id=6" style="text-decoration: none;">
+    <a href="view.html?id=6">
         <div class="card-glossaire">
             <div class="card-glossaire-infos">
                 <h2>Plutonium</h2>
@@ -252,7 +271,7 @@ Parcourez la ville, suivez nos itinéraires et laissez-vous guider sur les trace
         </div>
     </a>
 
-    <a href="view.html?id=7" style="text-decoration: none;">
+    <a href="view.html?id=7">
         <div class="card-glossaire">
             <div class="card-glossaire-infos">
                 <h2>rédactice en chef</h2>
@@ -261,7 +280,7 @@ Parcourez la ville, suivez nos itinéraires et laissez-vous guider sur les trace
         </div>
     </a>
 
-    <a href="view.html?id=8" style="text-decoration: none;">
+    <a href="view.html?id=8">
         <div class="card-glossaire">
             <div class="card-glossaire-infos">
                 <h2>Bohème</h2>
@@ -270,7 +289,7 @@ Parcourez la ville, suivez nos itinéraires et laissez-vous guider sur les trace
         </div>
     </a>
 
-    <a href="view.html?id=13" style="text-decoration: none;">
+    <a href="view.html?id=13">
         <div class="card-glossaire">
             <div class="card-glossaire-infos">
                 <h2>MI-5</h2>
@@ -279,7 +298,7 @@ Parcourez la ville, suivez nos itinéraires et laissez-vous guider sur les trace
         </div>
     </a>
 
-    <a href="view.html?id=14" style="text-decoration: none;">
+    <a href="view.html?id=14">
         <div class="card-glossaire">
             <div class="card-glossaire-infos">
                 <h2>Gentleman</h2>
@@ -289,18 +308,20 @@ Parcourez la ville, suivez nos itinéraires et laissez-vous guider sur les trace
     </a>
 </div>
 
-
+<!--footer-->
 <footer>
+    <!-- Mention légale -->
     <a href="mentions légales.pdf">Mentions légales</a>
     <a href="mailto:nratsimi@gmail.com?subject=Question&body=Une%20question%20sur%20une%20visite">Contact</a>
     <a href="https://alx-ra.github.io/Paris_fait_son_cinema/">Paris fait son cinéma</a> © 2025 by 
     <a href="https://github.com/Alx-Ra">Alex & Nina</a> is licensed under 
     <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+    <!-- Icônes Creative Commons -->
     <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="Creative Commons">
     <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="attribution">
+    <!-- Mention légale -->
     <p>Les images présentes sur ce site sont utilisées uniquement dans le cadre d’un projet scolaire.</p>
 </footer>
 
 </body>
 </html>
-
