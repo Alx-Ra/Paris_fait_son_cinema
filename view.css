@@ -1,158 +1,58 @@
-html, body {
+/* ==== Global Reset ==== */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+html, body {
     height: 100%;
-}
-
-body {
-    background: #2e2e2e;
-    background: radial-gradient(circle,rgba(46, 46, 46, 1) 0%, rgba(0, 0, 0, 1) 100%);
-    margin: 0;
-    min-height: 100vh;
     overflow-x: hidden;
+    font-family: sans-serif;
+    color: white;
+    background: radial-gradient(circle, rgba(46,46,46,1) 0%, rgba(0,0,0,1) 100%);
 }
 
-/*mise en page de la navbar*/
+/* ==== Navbar ==== */
 .navbar {
-    background-color: #000000;
-    padding: 20px 10px; 
+    background-color: #000;
+    padding: 20px;
     border-bottom: 1px solid rgba(255,255,255,0.1);
     position: sticky;
     top: 0;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    padding-left: 20px;
-    padding-top: 10px;
+    align-items: center;
+    gap: 10px;
+    z-index: 100;
 }
 
 .navbar h1 {
     color: #D1A54D;
-    margin: 0;
     text-transform: uppercase;
     text-shadow: 0 0 10px rgba(241,196,15,0.4);
+    font-size: 2rem;
 }
 
 .navbar a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
 
 #logo {
     width: 70px;
-    margin-right: 10px;
 }
 
-/*la mise en page des détails des films dans le view.html*/
-#card-details {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-
-}
-
-.map-itineraire {
-    display: flex;
-    gap: 50px;
-    align-items: flex-start;
-    max-width: 1200px;
-    width: 100%;
-    margin: 50px auto;
-    padding: 0 20px;
-}
-
-.map-lieu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  gap: 60px;
-}
-
-#map {
-    width:400px;
-    height:300px;
-    margin-top:20px;
-    border-radius:10px;
-}
-
-.img-infos {
-  display: flex;
-  align-items: flex-start;
-  gap: 60px;
-  max-width: 1000px;
-  margin-bottom: 20px;
-}
-
-.img-infos img {
-  width: 400px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-}
-
-.infos-droite {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-#resume {
-  text-align: justify;
-  line-height: 1.5;
-}
-
-/* Style pour les sections réalisateur et acteurs */
-#real, #act {
-    background: rgba(255, 255, 255, 0.02); 
-    padding: 15px; 
-    border-radius: 10px; /* Coins arrondis */
-    border-left: 3px solid #D1A54D; /* Bordure dorée à gauche pour accentuer */
-}
-
-.infos-droite h3 {
-    color: #D1A54D; 
-    font-size: 1.3rem; 
-    margin: 15px 0 5px 0; 
-    border-bottom: 2px solid rgba(209, 165, 77, 0.3); /* Ligne dorée sous le titre */
-    padding-bottom: 8px; 
-}
-
-
-#act ul {
-    list-style: none; 
-    padding: 0; 
-    margin: 8px 0 0 0; 
-}
-
-
-#act li {
-    padding: 5px 0; 
-    color: rgba(255, 255, 255, 0.85); 
-}
-
-/* Ajoute une étoile dorée avant chaque nom d'acteur */
-#act li::before {
-    content: "★ "; 
-    color: #D1A54D; 
-    margin-right: 8px; 
-}
-
-/* Hero Section */
+/* ==== Hero Section ==== */
 .hero {
-    width: 100vw;
-    margin: 0;
-    position: relative;
+    width: 100%;
     height: 100vh;
     background-size: cover;
     background-position: center;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: visible;
 }
 
 .hero::after {
@@ -162,7 +62,6 @@ body {
     left: 0;
     width: 100%;
     height: 120px;
-    background: #2e2e2e;
     background: radial-gradient(circle, rgba(46,46,46,1) 0%, rgba(0,0,0,1) 100%);
     clip-path: ellipse(130% 80% at 50% 100%);
 }
@@ -177,7 +76,6 @@ body {
     position: relative;
     z-index: 2;
     text-align: center;
-    color: white;
     padding: 0 20px;
 }
 
@@ -194,77 +92,121 @@ body {
     opacity: 0.95;
 }
 
-/* Contenu de la page */
+/* ==== Page Content ==== */
 .page-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    color: white;
-    padding-top: 40px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-@media (max-width: 768px) {
-    .hero-title {
-        font-size: 2.5rem;
-    }
-    .hero {
-        height: 60vh;
-    }
+/* ==== Film Infos ==== */
+.img-infos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 40px;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
-footer{
-    background-color: #000000;
-    padding: 50px 30px; 
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+.img-infos img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+.infos-droite {
+    flex: 1;
     display: flex;
     flex-direction: column;
+    gap: 15px;
+    min-width: 250px;
+}
+
+#resume {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+#real, #act {
+    background: rgba(255,255,255,0.02);
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 3px solid #D1A54D;
+}
+
+.infos-droite h3 {
+    color: #D1A54D;
+    font-size: 1.3rem;
+    margin: 15px 0 5px;
+    border-bottom: 2px solid rgba(209,165,77,0.3);
+    padding-bottom: 8px;
+}
+
+#act ul {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 0 0;
+}
+
+#act li {
+    padding: 5px 0;
+    color: rgba(255,255,255,0.85);
+}
+
+#act li::before {
+    content: "★ ";
+    color: #D1A54D;
+    margin-right: 8px;
+}
+
+/* ==== Map + Itinéraire ==== */
+.map-itineraire {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    flex-wrap: wrap;
+}
+
+.map-lieu {
+    flex: 0 0 400px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    border-top: 1px solid rgba(255,255,255,0.1);
-    color: #D1A54D;
-    text-shadow: 0 0 10px rgba(241,196,15,0.4);
 }
 
-footer img {
-    max-width: 1em;
-    max-height:1em;
-    margin-left: .2em;
+#map {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
 }
 
-footer a {
-    color: #D1A54D;
-    text-shadow: 0 0 10px rgba(241,196,15,0.4);
-    padding-right: 20px;
-    text-decoration: none;
-}
-
-footer p {
-    max-width: 300px;
-    line-height: 1.4;
-}
-
-/* Section Itineraire */
 .itineraire-section {
-    margin: 40px 0;
-    animation: fadeInUp 0.8s ease forwards;
+    flex: 1 1 0;
+    min-width: 250px;
 }
 
 .itineraire-box {
-    background: linear-gradient(135deg, rgba(209, 165, 77, 0.1) 0%, rgba(209, 165, 77, 0.05) 100%);
+    background: linear-gradient(135deg, rgba(209,165,77,0.1) 0%, rgba(209,165,77,0.05) 100%);
     padding: 30px;
     border-radius: 15px;
-    border: 1px solid rgba(209, 165, 77, 0.3);
-    margin-bottom: 30px;
+    border: 1px solid rgba(209,165,77,0.3);
+    margin-bottom: 20px;
 }
 
 .itineraire-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 .itineraire-header h3 {
@@ -285,8 +227,7 @@ footer p {
 
 .itineraire-text {
     line-height: 1.8;
-    color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 0;
+    color: rgba(255,255,255,0.9);
 }
 
 .itineraire-text strong {
@@ -294,19 +235,18 @@ footer p {
     font-weight: 600;
 }
 
-/* Section Lieux cliquables */
 .lieux-cliquables {
-    background: rgba(255, 255, 255, 0.03);
-    padding: 25px 30px;
+    background: rgba(255,255,255,0.03);
+    padding: 20px;
     border-radius: 15px;
     border-left: 4px solid #D1A54D;
+    margin-bottom: 20px;
 }
 
 .lieux-cliquables h3 {
     color: #D1A54D;
     font-size: 1.3rem;
-    margin-bottom: 15px;
-    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .lieux-cliquables ul {
@@ -314,53 +254,26 @@ footer p {
     padding: 0;
     margin: 0;
     display: grid;
-    gap: 12px;
+    gap: 10px;
 }
 
 .lieux-cliquables li {
-    padding: 12px 18px;
-    background: rgba(255, 255, 255, 0.05);
+    padding: 10px 15px;
+    background: rgba(255,255,255,0.05);
     border-radius: 8px;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255,255,255,0.9);
     border-left: 3px solid transparent;
     transition: all 0.3s ease;
 }
 
 .lieux-cliquables li:hover {
-    background: rgba(209, 165, 77, 0.15);
+    background: rgba(209,165,77,0.15);
     border-left-color: #D1A54D;
     transform: translateX(5px);
     color: #D1A54D;
 }
 
-/* Animation */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .itineraire-header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .itineraire-box {
-        padding: 20px;
-    }
-    
-    .lieux-cliquables {
-        padding: 20px;
-    }
-}
-
+/* ==== Films Proximité ==== */
 .films-proximite-section {
     width: 100%;
     max-width: 1200px;
@@ -373,7 +286,7 @@ footer p {
     font-size: 2rem;
     margin-bottom: 30px;
     text-align: center;
-    border-bottom: 2px solid rgba(209, 165, 77, 0.3);
+    border-bottom: 2px solid rgba(209,165,77,0.3);
     padding-bottom: 15px;
 }
 
@@ -384,20 +297,19 @@ footer p {
 }
 
 .film-proximite-card {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255,255,255,0.05);
     border-radius: 12px;
     overflow: hidden;
-    transition: all 0.3s ease;
-    cursor: pointer;
     text-decoration: none;
     color: white;
     display: block;
+    transition: all 0.3s ease;
 }
 
 .film-proximite-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 10px 30px rgba(209, 165, 77, 0.3);
-    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 30px rgba(209,165,77,0.3);
+    background: rgba(255,255,255,0.08);
 }
 
 .film-proximite-card img {
@@ -423,30 +335,92 @@ footer p {
 
 .film-proximite-info p {
     font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255,255,255,0.7);
     margin: 0;
 }
 
-/* Responsive */
+/* ==== Footer ==== */
+footer {
+    background-color: #000;
+    padding: 50px 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #D1A54D;
+    text-shadow: 0 0 10px rgba(241,196,15,0.4);
+}
+
+footer img {
+    max-width: 1em;
+    max-height: 1em;
+    margin-left: 0.2em;
+}
+
+footer a {
+    color: #D1A54D;
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+/* ==== Responsive Media Queries ==== */
+@media (max-width: 1024px) {
+    .img-infos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-infos img {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .infos-droite {
+        width: 100%;
+    }
+
+    .map-itineraire {
+        gap: 20px;
+    }
+}
+
 @media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero {
+        height: 60vh;
+    }
+
+    .map-itineraire {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-lieu {
+        width: 90%;
+    }
+
+    #map {
+        height: 250px;
+    }
+
+    .itineraire-section {
+        width: 100%;
+    }
+
+    .img-infos {
+        gap: 20px;
+    }
+
     .films-proximite-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .section-title {
         font-size: 1.5rem;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
