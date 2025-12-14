@@ -547,30 +547,40 @@ if (carte) { // Verifie si l'objet carte existe.
     </section>
 
     <div class="page-content">
-    <h2>${carte.titre}</h2>
-    <div class="img-infos">
-    <img src="${carte.image}" alt="${carte.titre}" style="width:400px;">
-    <div class="infos-droite">
-    <p id="resume">${carte.texte}</p>
-    <div id="real">
-    <h3>Réalisateur/Réalisatrice : </h3>
-    <p>${carte.realisateur}</p>
-    </div>
-    <div id="act">
-    <h3>Cast : </h3>
-    <ul>${acteurs}</ul>
-    </div>
-    </div>
-    </div>
-    <div class="vidéo">
-    <iframe width="420" height="315"
-    src="${carte.video}">
-    </iframe>
-    </div>
-    <div class="map-itineraire">
-    <div class="map-lieu">
-       <div id="map"></div>
-    </div>
+        <h2>${carte.titre}</h2>
+        <div class="img-infos">
+            <img src="${carte.image}" alt="${carte.titre}" style="width:400px;">
+            <div class="infos-droite">
+                <p id="resume">${carte.texte}</p>
+                <div id="real">
+                    <h3>Réalisateur/Réalisatrice : </h3>
+                    <p>${carte.realisateur}</p>
+                </div>
+                <div id="act">
+                    <h3>Cast : </h3>
+                    <ul>${acteurs}</ul>
+                </div>
+            </div>
+        </div>
+        ${carte.video ? `
+        <div class="vidéo">
+                <iframe
+                width="420"
+                height="315"
+                src="${carte.video}"
+                title="Bande-annonce ${carte.titre}"
+                allowfullscreen>
+            </iframe>
+        </div>
+        ` : `
+        <div class="video-indisponible">
+            <p>🎬 Bande-annonce indisponible pour ce programme.</p>
+        </div>
+        `}
+        <div class="map-itineraire">
+        <div class="map-lieu">
+        <div id="map"></div>
+        </div>
        ${carte.itineraire ? `
        <div class="itineraire-section">
            <div class="itineraire-box">
